@@ -18,20 +18,20 @@ export const MODELS = [
         description:
             'Guitar Models'
     },
-    {
-        id: 2,
-        name: 'Amps',
-        image: bass5006Img,
-        featured: true,
-        description:
-            'Amps'
-    },
-    {
-        id: 3,
-        name: 'Misc',
-        image: bass1506Img,
-        featured: false,
-        description:
-            'Lessons'
-    },
+    // {
+    //     id: 2,
+    //     name: 'Amps',
+    //     image: bass5006Img,
+    //     featured: true,
+    //     description:
+    //         'Amps'
+    // },
+    // {
+    //     id: 3,
+    //     name: 'Misc',
+    //     image: bass1506Img,
+    //     featured: false,
+    //     description:
+    //         'Lessons'
+    // },
 ];

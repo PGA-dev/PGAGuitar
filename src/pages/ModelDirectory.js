@@ -5,7 +5,7 @@ import SubHeader from '../components/SubHeader';
 const ModelDirectory = () => {
     return (
         <Container>
-            <SubHeader current='bassDir' />
+            <SubHeader current='modeldirectory' />
             <BassList />
         </Container>
     );

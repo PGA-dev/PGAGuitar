@@ -1,9 +1,9 @@
 import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-const Model = ({ bass }) => {
-    if (bass) {
-        const { id, image, name } = bass;
+const Model = ({ model }) => {
+    if (model) {
+        const { id, image, name } = model;
         return (
             <Link to={`${id}`}>
                 <Card>

@@ -4,8 +4,8 @@ export const selectAllModels = () => {
     return MODELS;
 };
 
-// export const selectRandomCampsite = ()=> {
-//     return CAMPSITES[Math.floor(CAMPSITES.length * Math.random())];
+// export const selectRandomModels = ()=> {
+//     return MODELS[Math.floor(MODELS.length * Math.random())];
 // }
 
 export const selectbyModelId = (modelid) => {
