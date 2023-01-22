@@ -23,9 +23,9 @@ function App() {
           path='modeldirectory/:bassid'
           element={<BassDetail />}
         />
-        <Route path='directory' element={<GuitarDirectory />} />
+        <Route path='guitardirectory' element={<GuitarDirectory />} />
         <Route
-          path='directory/:guitarid'
+          path='guitardirectory/:guitarid'
           element={<GuitarDetailPage />}
         />
 

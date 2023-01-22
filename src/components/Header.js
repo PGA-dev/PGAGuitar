@@ -26,12 +26,12 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/directory'>
+                        <NavLink className='nav-link' to='/guitardirectory'>
                             <i className='fa fa-list fa-sm' /> Guitar
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/directory'>
+                        <NavLink className='nav-link' to='/guitardirectory'>
                             <i className='fa fa-list fa-sm' /> Bass
                         </NavLink>
                     </NavItem>
