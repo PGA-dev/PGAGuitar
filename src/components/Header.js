@@ -47,8 +47,8 @@ const Header = () => {
                     </NavItem>
                 </Nav>
                 <Col m='2'>
-                    <h1 id='title' className='text-center' style={headstyle} >Guitar Index: A Modern Buyers Guide for Guitar Gear</h1>
-                    <h5 style={headstyle2} className='text-center'>Ibanez Edition</h5>
+                    <h1 id='title' className='text-center' style={headstyle} >Players Index: A Modern Buyers Guide for Guitar Gear</h1>
+                    <h5 style={{ color: "purple",padding: "6px", fontSize: "45px",fontFamily: "Arial-bold"}} className='text-center'>Ibanez Edition</h5>
                     </Col>
             </Collapse>
             
@@ -65,10 +65,5 @@ const headstyle = {
     fontSize: "75px",
     fontFamily: "Arial-bold"
 };
-const headstyle2 = {
-    color: "purple",
-    padding: "6px",
-    fontSize: "45px",
-    fontFamily: "Arial-bold"
-};
+
 export default Header;
