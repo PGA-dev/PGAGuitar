@@ -62,8 +62,8 @@ const Header = () => {
 const headstyle = {
     color: "SlateBlue",
     padding: "8px",
-    fontSize: "75px",
-    fontFamily: "Arial-bold"
+    fontSize: "65px",
+    fontFamily: "Papyrus"
 };
 
 export default Header;
