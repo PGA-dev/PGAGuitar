@@ -1,6 +1,6 @@
 import { Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
 
-const BassDetail = ({ bass }) => {
+const ModelDetail = ({ bass }) => {
     if (bass) {
         const { id, image, name, description } = bass;
 
@@ -17,4 +17,4 @@ const BassDetail = ({ bass }) => {
     }; return null;
 };
 
-export default BassDetail;
+export default ModelDetail;

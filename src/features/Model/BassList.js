@@ -1,6 +1,6 @@
 import { Row, Col} from 'reactstrap';
 import { selectAllBass } from './bassSlice';
-import BassCard from "./BassCard";
+import Model from "./Model";
 
 
 const BassList = () => {
@@ -10,7 +10,7 @@ const BassList = () => {
             {bass.map((bass) => {
                 return (
                     <Col md='12' className='m-4' key={bass.id}>
-                        <BassCard bass={bass} />
+                        <Model bass={bass} />
                     </Col>
                 );
             })}
