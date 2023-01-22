@@ -1,16 +1,16 @@
 import { Row, Col} from 'reactstrap';
-import { selectAllBass } from './bassSlice';
+import { selectAllModels } from './modelSlice';
 import Model from "./Model";
 
 
-const BassList = () => {
-    const bass = selectAllBass();
+const ModelList = () => {
+    const models = selectAllModels();
     return (
         <Row className='ms-auto'>
-            {bass.map((bass) => {
+            {models.map((model) => {
                 return (
-                    <Col md='12' className='m-4' key={bass.id}>
-                        <Model bass={bass} />
+                    <Col md='12' className='m-4' key={model.id}>
+                        <Model model={model} />
                     </Col>
                 );
             })}
@@ -18,4 +18,4 @@ const BassList = () => {
     );
 };
 
-export default BassList;
+export default ModelList;

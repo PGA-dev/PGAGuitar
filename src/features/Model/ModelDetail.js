@@ -1,8 +1,8 @@
 import { Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
 
-const ModelDetail = ({ bass }) => {
-    if (bass) {
-        const { id, image, name, description } = bass;
+const ModelDetail = ({ model }) => {
+    if (model) {
+        const { id, image, name, description } = model;
 
         return (
             <Col md='5' className='m-1'>
