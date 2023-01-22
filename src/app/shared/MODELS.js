@@ -1,7 +1,7 @@
 import bass1506Img from '../assets/img/p_region_EHB1506MS_BIF_1P_01.png';
 import bass5006Img from '../assets/img/p_region_SR5006_OL_00_05.png';
 import bass1500Img from '../assets/img/p_region_EHB1500_DEF_1P_01.png';
-export const BASS = [
+export const MODELS = [
     {
         id: 0,
         name: 'Basses',

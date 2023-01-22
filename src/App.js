@@ -17,17 +17,18 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='contact' element={<ContactPage />} />
-        <Route path='about' element={<AboutPage />} />
+        <Route path='about' element={<AboutPage />} />        
+        <Route path='modeldirectory' element={<ModelDirectory />} />
+        <Route
+          path='modeldirectory/:bassid'
+          element={<BassDetail />}
+        />
         <Route path='directory' element={<GuitarDirectory />} />
         <Route
           path='directory/:guitarid'
           element={<GuitarDetailPage />}
         />
-        <Route path='bassdir' element={<ModelDirectory />} />
-        <Route
-          path='bassdir/:bassid'
-          element={<BassDetail />}
-        />
+
       </Routes>
       <Footer />
     </div>

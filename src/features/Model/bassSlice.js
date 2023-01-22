@@ -1,7 +1,7 @@
-import { BASS} from "../../app/shared/BASS";
+import { MODELS} from "../../app/shared/MODELS";
 
 export const selectAllBass = () => {
-    return BASS;
+    return MODELS;
 };
 
 // export const selectRandomCampsite = ()=> {
@@ -9,9 +9,9 @@ export const selectAllBass = () => {
 // }
 
 export const selectbyBassId = (bassid) => {
-    return BASS.find((bass) => bass.id === parseInt(bassid));
+    return MODELS.find((bass) => bass.id === parseInt(bassid));
 };
 
 export const selectBassFeatured = () => {
-    return BASS.find((bass) => bass.featured);
+    return  MODELS.find((bass) => bass.featured);
 };
