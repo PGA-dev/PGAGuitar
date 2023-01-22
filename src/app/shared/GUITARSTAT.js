@@ -36,90 +36,90 @@ export const GUITARSTAT = [
         id: 5,
         guitarid: 1,
         heading: 'Model:',
-        text: "Tasdfsadfas"
+        text: "Text filler"
     },
     {
         id: 6,
         guitarid: 1,
         heading: 'Model:',
-        text: 'asdfasdfasdf'
+        text: 'Text filler'
     },
     {
         id: 7,
         guitarid: 1,
         heading: 'Model:',
-        text: 'asdfasdfsadf'
+        text: 'Text filler'
     },
     {
         id: 8,
         guitarid: 1,
         heading: 'Model:',
-        text: "asdfsadf"
+        text: 'Text filler'
     },
     {
         id: 9,
         guitarid: 1,
         heading: 'Model:',
-        text: 'asdfasdfa'
+        text: 'Text filler'
     },
     {
         id: 10,
         guitarid: 2,
         heading: 'Model:',
-        text: 'asdfasdfasdf'
+        text: 'Text filler'
     },
     {
         id: 11,
         guitarid: 2,
         heading: 'Model:',
-        text: 'asdfasdfasdf'
+        text: 'Text filler'
     },
     {
         id: 12,
         guitarid: 2,
         heading: 'Model:',
-        text: 'asdfasdfasdf'
+        text: 'Text filler'
     },
     {
         id: 13,
         guitarid: 2,
         heading: 'Model:',
-        text: 'asdfasdfasdf'
+        text: 'Text filler'
     },
     {
         id: 14,
         guitarid: 2,
         heading: 'Model:',
-        text: 'asdfasdfasdf'
+        text: 'aText filler'
     },
     {
         id: 15,
         guitarid: 3,
         heading: 'Model:',
-        text: 'asdfasdfa'
+        text: 'Text filler'
     },
     {
         id: 16,
         guitarid: 3,
         heading: 'Model:',
-        text: 'asdfasdf'
+        text: 'Text filler'
     },
     {
         id: 17,
         guitarid: 3,
         heading: 'Model:',
-        text: 'asdfasdf'
+        text: 'Text filler'
     },
     {
         id: 18,
         guitarid: 3,
         heading: 'Model:',
-        text: 'Tasdfasdfasdf'
+        text: 'Text filler'
     },
     {
         id: 19,
         guitarid: 3,
         heading: 'Model:',
-        text: "Tasdfasdfasdfasdf"
+        text: "Text filler"
     }
 ];
