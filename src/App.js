@@ -17,10 +17,10 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='contact' element={<ContactPage />} />
-        <Route path='about' element={<AboutPage />} />        
+        <Route path='about' element={<AboutPage />} />
         <Route path='modeldirectory' element={<ModelDirectory />} />
         <Route
-          path='modeldirectory/:bassid'
+          path='modeldirectory/:modelid'
           element={<BassDetail />}
         />
         <Route path='guitardirectory' element={<GuitarDirectory />} />

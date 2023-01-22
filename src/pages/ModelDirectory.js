@@ -1,12 +1,12 @@
 import { Container } from 'reactstrap';
-import BassList from '../features/Model/BassList';
+import ModelList from '../features/Model/ModelList';
 import SubHeader from '../components/SubHeader';
 
 const ModelDirectory = () => {
     return (
         <Container>
             <SubHeader current='modeldirectory' />
-            <BassList />
+            <ModelList />
         </Container>
     );
 };
