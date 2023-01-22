@@ -4,34 +4,34 @@ import bass1500Img from '../assets/img/p_region_EHB1500_DEF_1P_01.png';
 export const BASS = [
     {
         id: 0,
-        name: 'SR 5000',
+        name: 'Basses',
         image: bass5006Img,
         featured: false,
         description:
-            'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
+            'Bass Models'
     },
     {
         id: 1,
-        name: 'SR EBH 1500',
+        name: 'Guitars',
         image: bass1500Img,
         featured: false,
         description:
-            'A multiscale 4-string Tuned B-G with Barts and all the trimings'
+            'Guitar Models'
     },
     {
         id: 2,
-        name: 'SR 5006',
+        name: 'Amps',
         image: bass5006Img,
         featured: true,
         description:
-            'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
+            'Amps'
     },
     {
         id: 3,
-        name: 'SR 1506',
+        name: 'Misc',
         image: bass1506Img,
         featured: false,
         description:
-            'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
+            'Lessons'
     },
 ];

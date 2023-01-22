@@ -2,7 +2,7 @@ import { Container } from 'reactstrap';
 import BassList from '../features/Bass/BassList';
 import SubHeader from '../components/SubHeader';
 
-const BassDirectory = () => {
+const ModelDirectory = () => {
     return (
         <Container>
             <SubHeader current='bassDir' />
@@ -11,4 +11,4 @@ const BassDirectory = () => {
     );
 };
 
-export default BassDirectory;
+export default ModelDirectory;
