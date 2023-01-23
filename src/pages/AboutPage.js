@@ -1,6 +1,7 @@
 import { Col, Row, Container, Card, CardBody, CardHeader } from "reactstrap";
 import SubHeader from "../components/SubHeader";
 import GuitarFlip from "../features/Flip/guitarFlip";
+import profile from "../../src/app/assets/img/profile.png";
 
 const AboutPage = () => {
     return (
@@ -24,16 +25,30 @@ const AboutPage = () => {
             <Row>
                 <Col>
                     <Card>
-                        <CardHeader className=" mt-1 bg text-left" style={{  border: "5px ridge #e6e3fa", borderRadius: "2%", backgroundColor: "LightGrey", color: "Blue",padding: "12px", fontSize: "60px", fontFamily: "papyrus"}}>
-                           About the Author
+                        <CardHeader className=" mt-1 bg text-left" style={{ border: "5px ridge #e6e3fa", borderRadius: "2%", backgroundColor: "LightGrey", color: "Blue", padding: "12px", fontSize: "50px", fontFamily: "papyrus" }}>
+                            <Row className="row-right"><div className=""><img top style={{height:290 }} width='25%' src={profile} alt='Author' ></img></div></Row>
+                            <Row><div m='2'>About the Author</div></Row>
                         </CardHeader>
-                        <CardBody className="bg" style={{ border: "5px ridge #e6e3ea",backgroundColor: "LightSteelBlue", color: "SkyBlue",padding: "6px", fontSize: "45px",fontFamily: "arial-bold"}}>
+                        <CardBody className="bg" style={{ border: "5px ridge #e6e3ea", backgroundColor: "LightSteelBlue", color: "SkyBlue", padding: "6px", fontSize: "25px", fontFamily: "papyrus" }}>
                             Body for my guitar card and such
-                            <p> asdlfkajsdflkajsdfasdf</p>
-                            <p> asdlfkajsdflkajsdfasdf</p>
-                            <p> asdlfkajsdflkajsdfasdf</p>
-                            <p> asdlfkajsdflkajsdfasdf</p>
-                            <p> asdlfkajsdflkajsdfasdf</p>
+                            <ul>
+                                <li>
+                                    <p> asdlfkajsdflkajsdfasdf</p>
+                                </li>
+                                <li>
+                                    <p> asdlfkajsdflkajsdfasdf</p>
+                                </li>
+                                <li>
+                                    <p> asdlfkajsdflkajsdfasdf</p>
+                                </li>
+                                <li>
+                                    <p> asdlfkajsdflkajsdfasdf</p>
+                                </li>
+                                <li>
+                                    <p> asdlfkajsdflkajsdfasdf</p>
+                                </li>
+                            </ul>
+
                         </CardBody>
                     </Card>
                 </Col>

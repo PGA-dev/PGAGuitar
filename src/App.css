@@ -67,6 +67,7 @@ h2 {
     font-family: papyrus;
 }
 
+
 .page-enter {
     opacity: 0;
     transform: translateX(-100%);
