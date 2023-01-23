@@ -1,20 +1,20 @@
 import { Container, Row } from 'reactstrap';
 import { useParams } from 'react-router-dom';
-import { selectGuitarById } from '../features/guitar/guitarSlice';
-import GuitarDetail from '../features/guitar/GuitarDetail';
-import GuitarStatList from '../features/guitarstats/GuitarStatList';
+import { selectBassById } from '../features/bass/bassSlice';
+import BassDetail from '../features/bass/BassDetail';
+import BassStatList from '../features/bassstats/BassStatList';
 import SubHeader from '../components/SubHeader';
 
 const BassDetailPage = () => {
-    const { guitarid } = useParams();
-    const guitar = selectGuitarById(guitarid);
+    const { bassid } = useParams();
+    const bass = selectBassById(bassid);
 
     return (
         <Container>
             <Row>
-                <SubHeader current={guitar.name} detail={true} />
-                <GuitarDetail guitar={guitar} />
-                <GuitarStatList guitarid={guitarid} />
+                <SubHeader current={bass.name} detail={true} />
+                <BassDetail bass={bass} />
+                <BassStatList bassid={bassid} />
             </Row>
         </Container>
     );

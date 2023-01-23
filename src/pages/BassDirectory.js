@@ -1,12 +1,12 @@
 import { Container } from 'reactstrap';
-import GuitarList from '../features/guitar/GuitarList';
+import BassList from '../features/bass/BassList';
 import SubHeader from '../components/SubHeader';
 
 const BassDirectoryPage = () => {
     return (
         <Container>
-            <SubHeader current='guitardirectory' />
-            <GuitarList />
+            <SubHeader current='bassdirectory' />
+            <BassList />
         </Container>
     );
 };
