@@ -13,9 +13,12 @@ h3,
 .card-title {
     font-weight: 500;
     font-size: 1.25rem;
+    font-family: papyrus;
     color:#901cad;
 }
 .card-body{
+    
+    font-family: papyrus;
     color:aqua;
 }
 h2 {
@@ -25,6 +28,7 @@ h2 {
 .card-img-overlay .card-title {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
+    font-family: papyrus;
 }
 
 .row-content {
@@ -86,6 +90,7 @@ h2 {
 #title{
     font-size: 75px;
     color:fuchsia;
+    font-family: papyrus;
 }
 
 #siteRefs{
