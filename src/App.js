@@ -6,8 +6,8 @@ import Footer from './components/Footer';
 import GuitarDirectory from './pages/GuitarDirectory';
 import GuitarDetailPage from './pages/GuitarDetailPage';
 import './App.css';
-import ModelDirectory from './pages/ModelDirectory';
-import ModelDetail from './features/Model/ModelDetail';
+import ModelDirectory from './pages/ITypeDirectory';
+import ModelDetail from './features/itype/ITypeDetail';
 import AboutPage from './pages/AboutPage';
 
 function App() {

@@ -1,5 +1,5 @@
 import { Container, Row } from 'reactstrap';
 import { useParams } from 'react-router-dom';
-import { selectbyModelId } from '../features/Model/modelSlice';
-import ModelDetail from '../features/Model/ModelDetail';
+import { selectbyITypeId } from '../features/itype/itypeSlice';
+import ITypeDetail from '../features/itype/ITypeDetail';
 import SubHeader from '../components/SubHeader';
