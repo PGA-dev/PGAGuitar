@@ -1,4 +1,4 @@
-import guitar5328Img from '../assets/img/p_region_RG5328_LDK_00_02.png'
+import guitarRGA622 from '../assets/img/p_region_RGA622XH_BK_00_01.png';
 import guitar8570Img from '../assets/img/p_region_RG8570Z_BRE_00_03.png';
 import guitar8527Img from '../assets/img/p_region_RG8527Z_SDE_00_03.png';
 import guitar8520Img from '../assets/img/p_region_RG8520_GE_00_03.png';
@@ -14,11 +14,11 @@ export const GUITAR = [
     },
     {
         id: 1,
-        name: 'RG 5328',
-        image: guitar5328Img,
-        featured: false,
+        name: 'RGA 622',
+        image: guitarRGA622,
+        featured: true,
         description:
-            'This 8 string monster, coming with a Gibralter II-8 bridge, Dimarzio Fusion Edge 8 pickups and a Macassar Ebony Fretboard'
+            'Standard S-style 6-string H-s pickup config Rocking A Tone Zone and a Air Norton S'
     },
     {
         id: 2,

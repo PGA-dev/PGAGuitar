@@ -1,17 +1,17 @@
 
 //Image courtesy of Hoshino Gakki/Ibanez.com
-import guitarRGA622 from '../assets/img/p_region_RGA622XH_BK_00_01.png';
+import QX527PB from '../assets/img/p_region_QX527PB_ABS_1P_01.png';
 import RG5328 from '../assets/img/p_region_RG5328_LDK_00_02.png';
 //Image courtesy of Hoshino Gakki/Ibanez.com
 //must make 4 slices and arrays for each of the model links on homepage
 export const MULTIGUITAR = [
     {
         id: 0,
-        name: 'RGA 622',
-        image: guitarRGA622,
+        name: 'QX527PB',
+        image: QX527PB,
         featured: true,
         description:
-            'Standard S-style 6-string H-s pickup config Rocking A Tone Zone and a Air Norton S'
+            'Multi-scale 7 string'
     },
     {
         id: 1,

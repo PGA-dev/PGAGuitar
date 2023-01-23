@@ -2,10 +2,11 @@ import { Col, Row } from 'reactstrap';
 import DisplayCard from './FrontCard';
 import { selectFeaturedGuitar } from '../guitar/guitarSlice';
 import { selectFeaturedMulti } from '../multiguitar/multiGuitarSlice';
+import { selectFeaturedMultiBass } from '../mutibass/multiBassSlice';
 //Used to map DisplayCards for HomePage...
 
 const FrontEndDisplay = () => {
-    const items = [selectFeaturedGuitar(), selectFeaturedMulti(),selectFeaturedMulti()];
+    const items = [selectFeaturedGuitar(), selectFeaturedMulti(),selectFeaturedMultiBass()];
     //mapping from CAMPSITES.js data array and PROMOTIONS.js data array...1 from each on Homepage
 
     return (
