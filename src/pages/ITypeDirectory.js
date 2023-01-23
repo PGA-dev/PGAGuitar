@@ -5,7 +5,7 @@ import SubHeader from '../components/SubHeader';
 const ITypeDirectory = () => {
     return (
         <Container>
-            <SubHeader current='itypedirectory' />
+            <SubHeader current='guidetypedirectory' />
             <ITypeList />
         </Container>
     );
