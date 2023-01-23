@@ -24,10 +24,10 @@ const AboutPage = () => {
             <Row>
                 <Col>
                     <Card>
-                        <CardHeader className=" mt-1 bg text-left" style={{  border: "5px ridge #e6e3fa", borderRadius: "2%", backgroundColor: "LightGrey", color: "Blue",padding: "12px", fontSize: "60px", fontFamily: "lobster"}}>
+                        <CardHeader className=" mt-1 bg text-left" style={{  border: "5px ridge #e6e3fa", borderRadius: "2%", backgroundColor: "LightGrey", color: "Blue",padding: "12px", fontSize: "60px", fontFamily: "papyrus"}}>
                            About the Author
                         </CardHeader>
-                        <CardBody className="bg" style={{ border: "5px ridge #e6e3ea",backgroundColor: "LightSteelBlue", color: "SkyBlue",padding: "6px", fontSize: "45px",fontFamily: "Lucida Handwriting"}}>
+                        <CardBody className="bg" style={{ border: "5px ridge #e6e3ea",backgroundColor: "LightSteelBlue", color: "SkyBlue",padding: "6px", fontSize: "45px",fontFamily: "arial-bold"}}>
                             Body for my guitar card and such
                             <p> asdlfkajsdflkajsdfasdf</p>
                             <p> asdlfkajsdflkajsdfasdf</p>

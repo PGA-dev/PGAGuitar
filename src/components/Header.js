@@ -22,27 +22,27 @@ const Header = () => {
                 <Nav className='me-auto' navbar>
                     <NavItem>
                         <NavLink className='nav-link' to='/'>
-                            <i className='fa fa-home fa-lg' /> Home
+                            <i className='fa fa-h-square fa-lg' /> Home
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/guitardirectory'>
-                            <i className='fa fa-list fa-sm' /> Guitar
+                            <i className='fa fa-cogs fa-sm' /> Guitar
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/bassdirectory'>
-                            <i className='fa fa-list fa-sm' /> Bass
+                            <i className='fa fa-gear fa-sm' /> Bass
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/about'>
-                            <i className='fa fa-info fa-lg' /> Guide
+                            <i className='fa fa-gg fa-lg' /> Guide
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/contact'>
-                            <i className='fa fa-address-card fa-lg' /> Contact
+                            <i className='fa fa-thumbs-up fa-lg' /> Contact
                         </NavLink>
                     </NavItem>
                 </Nav>
@@ -52,7 +52,7 @@ const Header = () => {
                     </Col>
             </Collapse>
             
-            <NavbarBrand className='text-left' href='/'>
+            <NavbarBrand className='text-left' href='https://www.ibanez.com/usa/'>
                 <img src={Ibanez} alt='Ibanez logo' className='float-start' />
 
             </NavbarBrand>            

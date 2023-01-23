@@ -59,7 +59,7 @@ const Footer = () => {
                             className='btn btn-link'
                             href='mailto:paulgadam@gmail.com'
                         >
-                            <i className='fa fa-envelope-o' /> paulgadam@gmail.com.com
+                            <i className='fa fa-envelope-open' /> paulgadam@gmail.com.com
                         </a>
                     </Col>
 
