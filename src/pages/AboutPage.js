@@ -29,23 +29,23 @@ const AboutPage = () => {
                             <Row className="row-right"><div className=""><img top style={{height:290 }} width='25%' src={profile} alt='Author' ></img></div></Row>
                             <Row><div m='2'>About the Author</div></Row>
                         </CardHeader>
-                        <CardBody className="bg" style={{ border: "5px ridge #e6e3ea", backgroundColor: "LightSteelBlue", color: "SkyBlue", padding: "6px", fontSize: "25px", fontFamily: "papyrus" }}>
-                            Body for my guitar card and such
+                        <CardBody className="bg" style={{ border: "5px ridge #e6e3ea", backgroundColor: "LightSteelBlue", color: "SkyBlue", padding: "6px", fontSize: "35px", fontFamily: "papyrus" }}>
+                                <div style={{color: 'LightSteelBlue', fontFamily: 'Arial-bold' }}> </div>
                             <ul>
                                 <li>
-                                    <p> asdlfkajsdflkajsdfasdf</p>
+                                    <p>Guitar Player for 40 years</p>
                                 </li>
                                 <li>
-                                    <p> asdlfkajsdflkajsdfasdf</p>
+                                    <p> Bass Player for 20 years</p>
                                 </li>
                                 <li>
-                                    <p> asdlfkajsdflkajsdfasdf</p>
+                                    <p> Guitar Teacher</p>
                                 </li>
                                 <li>
-                                    <p> asdlfkajsdflkajsdfasdf</p>
+                                    <p> React Programmer -- on a good day</p>
                                 </li>
                                 <li>
-                                    <p> asdlfkajsdflkajsdfasdf</p>
+                                    <p> Ibanez player for 35 years</p>
                                 </li>
                             </ul>
 
