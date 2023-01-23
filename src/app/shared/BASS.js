@@ -34,6 +34,6 @@ export const BASS = [
         image: bassebh1500,
         featured: true,
         description:
-            'This 8 string monster, coming with a Gibralter II-8 bridge, Dimarzio Fusion Edge 8 pickups and a Macassar Ebony Fretboard'
+            'EBH 1500 workshop bass'
     },
 ];
