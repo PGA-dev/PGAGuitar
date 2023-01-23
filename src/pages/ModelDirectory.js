@@ -2,7 +2,7 @@ import { Container } from 'reactstrap';
 import ModelList from '../features/Model/ModelList';
 import SubHeader from '../components/SubHeader';
 
-const ModelDirectory = () => {
+const InTypeDirectory = () => {
     return (
         <Container>
             <SubHeader current='modeldirectory' />
@@ -11,4 +11,4 @@ const ModelDirectory = () => {
     );
 };
 
-export default ModelDirectory;
+export default InTypeDirectory;

@@ -7,7 +7,7 @@ import GuitarDirectory from './pages/GuitarDirectory';
 import GuitarDetailPage from './pages/GuitarDetailPage';
 import './App.css';
 import ModelDirectory from './pages/ModelDirectory';
-import BassDetail from './features/Model/ModelDetail';
+import ModelDetail from './features/Model/ModelDetail';
 import AboutPage from './pages/AboutPage';
 
 function App() {
@@ -18,11 +18,6 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='contact' element={<ContactPage />} />
         <Route path='about' element={<AboutPage />} />
-        <Route path='modeldirectory' element={<ModelDirectory />} />
-        <Route
-          path='modeldirectory/:modelid'
-          element={<BassDetail />}
-        />
         <Route path='guitardirectory' element={<GuitarDirectory />} />
         <Route
           path='guitardirectory/:guitarid'

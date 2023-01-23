@@ -1,12 +1,12 @@
 import guitar5328Img from '../assets/img/p_region_RG5328_LDK_00_02.png'
-import bass1506Img from '../assets/img/p_region_EHB1506MS_BIF_1P_01.png';
 import guitar8570Img from '../assets/img/p_region_RG8570Z_BRE_00_03.png';
 import guitar8527Img from '../assets/img/p_region_RG8527Z_SDE_00_03.png';
+import guitar8520Img from '../assets/img/p_region_RG8520_GE_00_03.png';
 //WAS CAMPSITES
 export const GUITAR = [
     {
         id: 0,
-        name: 'Rg Guitars',
+        name: '8527',
         image: guitar8527Img,
         featured: false,
         description:
@@ -30,8 +30,8 @@ export const GUITAR = [
     },
     {
         id: 3,
-        name: 'SR 1506',
-        image: bass1506Img,
+        name: 'RG 8520',
+        image: guitar8520Img,
         featured: false,
         description:
             'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
