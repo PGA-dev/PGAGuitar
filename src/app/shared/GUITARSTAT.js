@@ -2,7 +2,7 @@ export const GUITARSTAT = [
     {
         id: 0,
         guitarid: 0,
-        heading: 'Model:',
+        heading: 'Model',
         text: '7 String bliss'
     },
     {
