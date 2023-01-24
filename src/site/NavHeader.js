@@ -36,7 +36,7 @@ const NavHeader = () => {
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/about' style={{ color: "purple"}}>
-                            <i style={{ color: "aqua"}} className='fa fa-gg fa-lg' /> Guide
+                            <i style={{ color: "aqua"}} className='fa fa-gg fa-lg' /> Your Guide
                         </NavLink>
                     </NavItem>
                     <NavItem>

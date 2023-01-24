@@ -45,27 +45,27 @@ h2 {
     font-family: papyrus;
 }
 
-.navbar-brand {
+/* .navbar-brand {
     max-width: 4rem;
     margin-right: 2rem;
-}
+} */
 
-.navbar-brand img {
+/* .navbar-brand img {
     width: 150%;
     height: 150%;
     margin-right: 2rem;
     max-width: 4rem;
 
-}
+} */
 
-.navbar-dark {
+/* .navbar-dark {
     background-color: #901cad;
     background-image: radial-gradient( #09155a, black);
     border-bottom: #20678b solid 5px;
     margin-bottom: 1rem;
     min-height: 1rem;
     font-family: papyrus;
-}
+} */
 
 
 .page-enter {
@@ -99,19 +99,20 @@ h2 {
 }
 
 #navhead{
-    background-color: #901cad;
+    /* background-color: #901cad; */
     background-image: radial-gradient(black, #09155a );
-    border-bottom: #20678b solid 5px;
+    border-bottom: #20678b solid 1px;
     margin-bottom: 0rem;
     min-height: 1rem;
     font-family: papyrus;
 }
 
 #headerhead{
-    background-color: #901cad;
+    /* background-color: #901cad; */
     background-image: radial-gradient( #09155a,black );
-    border-bottom: #20678b solid 5px;
-    margin-bottom: 2rem;
+    border-bottom: #20678b solid 2px;
+    margin-bottom: 1rem;
+    padding-top: 4rem;
     min-height: 15rem;
     font-family: papyrus;
 }
