@@ -9,15 +9,13 @@ import {
     NavItem,
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import Ibanez from '../app/assets/img/Ibanez_logo.png';
-import profile from '../app/assets/img/profile.png';
 
-const Header = () => {
+
+
+const NavHeader = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-
     return (
-        <Navbar dark color='primary' sticky='top' expand='lg'>
-
+        <Navbar id='navhead'dark color='primary' sticky='top' expand='lg'>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className='me-auto' navbar>
@@ -47,24 +45,16 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                 </Nav>
-                <Col m='2'>
-                    <h1 id='title' className='text-center' style={headstyle} >Players Index: A Modern Buyers Guide for Guitar Gear</h1>
-                    <h5 style={{ color: "pink" ,padding: "6px", fontSize: "45px",fontFamily: "Arial-bold"}} className='text-center'>Ibanez POC Edition</h5>
-                    </Col>
             </Collapse>
-            
-            <NavbarBrand className='text-left' href='https://www.ibanez.com/usa/'>
-                <img  src={Ibanez} alt='Ibanez logo' className='float-start' />
-
-            </NavbarBrand>            
+                       
         </Navbar>
     );
 };
-const headstyle = {
-    color: "SlateBlue",
-    padding: "8px",
-    fontSize: "65px",
-    fontFamily: "Papyrus"
-};
+// const headstyle = {
+//     color: "SlateBlue",
+//     padding: "8px",
+//     fontSize: "65px",
+//     fontFamily: "Papyrus"
+// };
 
-export default Header;
+export default NavHeader;
