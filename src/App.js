@@ -22,7 +22,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='contact' element={<ContactPage />} />
         <Route path='about' element={<AboutPage />} />
-        <Route path='GuideTypeDirectory' element={<ITypeDirectory />} />
+        <Route path='guidetypedirectory' element={<ITypeDirectory />} />
         <Route path='guitardirectory' element={<GuitarDirectory />} />
         <Route
           path='guitardirectory/:guitarid'
@@ -33,7 +33,6 @@ function App() {
           path='bassdirectory/:bassid'
           element={<BassDetailPage />}
         />
-
       </Routes>
       <Footer />
     </div>
