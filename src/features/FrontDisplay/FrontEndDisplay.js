@@ -1,9 +1,9 @@
 import { Col, Row } from 'reactstrap';
 import FrontFormat from './FrontFormat';
-import { selectFeaturedGuitar } from '../guitar/guitarSlice';
-import { selectFeaturedMulti } from '../multiguitar/multiGuitarSlice';
-import { selectFeaturedMultiBass } from '../mutibass/multiBassSlice';
-import { selectFeaturedBass } from '../bass/bassSlice';
+import { selectFeaturedGuitar } from './Featured';
+import { selectFeaturedMulti } from './Featured';
+import { selectFeaturedMultiBass } from './Featured';
+import { selectFeaturedBass } from './Featured';
 //Used to map DisplayCards for HomePage...
 
 const FrontEndDisplay = () => {

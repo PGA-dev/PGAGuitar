@@ -95,3 +95,7 @@ h2 {
     min-height: 15rem;
     font-family: papyrus;
 }
+
+#frontcard {
+    border: #20678b ridge 5px;
+}
