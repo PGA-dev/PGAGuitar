@@ -8,7 +8,7 @@ export const GUITARSTAT = [
     {
         id: 1,
         guitarid: 0,
-        heading: 'Model:',
+        heading: 'Model',
         text: 'Text filler',
 
     },
