@@ -7,12 +7,12 @@ const initialState = {
 };
 
 const multibassSlice = createSlice({
-    name: 'multibasses',
+    name: 'multibass',
     initialState
 });
 
 export const multibassReducer = multibassSlice.reducer;
 
 export const selectFeaturedMultiBass= (state) => {
-    return state.multibasses.mulitibassArray.find((multibass) => multibass.featured);
+    return state.multibass.mulitibassArray.find((multibass) => multibass.featured);
 };

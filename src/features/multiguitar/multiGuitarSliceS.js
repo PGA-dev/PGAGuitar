@@ -6,7 +6,7 @@ const initialState = {
 };
 
 const multiguitarSlice = createSlice({
-    name: 'multiguitars',
+    name: 'multiguitar',
     initialState
 });
 
