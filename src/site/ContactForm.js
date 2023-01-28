@@ -13,7 +13,7 @@ const ContactForm = () => {
             firstName: '',
             lastName: '',
             email: '',
-            agree: false,
+            upload: false,
             feedback: ''
         }}
         onSubmit={handleSubmit}
@@ -56,7 +56,7 @@ const ContactForm = () => {
             <FormGroup row>
                 <Label check md={{ size: 5, offset: 2 }}>
                     <Field
-                        name='agree'
+                        name='upload'
                         type='checkbox'
                         className='form-check-input'
                     />{' '}

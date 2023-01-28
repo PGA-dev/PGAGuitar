@@ -98,8 +98,10 @@ h2 {
 
 #frontcard {
     border: #20678b ridge 5px;
+    background-color:rgb(172, 172, 172);
 }
 
 #bgcard {
     border: #20678b ridge 5px;
+    background-color:rgb(172, 172, 172);
 }
