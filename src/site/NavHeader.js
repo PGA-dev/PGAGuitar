@@ -30,8 +30,8 @@ const NavHeader = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/bassdirectory' style={{ color: "purple"}}>
-                            <i style={{ color: "SlateBlue"}} className='fa fa-gear fa-sm' /> Bass
+                        <NavLink className='nav-link' to='/guideaboutpage' style={{ color: "purple"}}>
+                            <i style={{ color: "SlateBlue"}} className='fa fa-gear fa-sm' /> About the Guide
                         </NavLink>
                     </NavItem>
                     <NavItem>
@@ -50,11 +50,5 @@ const NavHeader = () => {
         </Navbar>
     );
 };
-// const headstyle = {
-//     color: "SlateBlue",
-//     padding: "8px",
-//     fontSize: "65px",
-//     fontFamily: "Papyrus"
-// };
 
 export default NavHeader;
