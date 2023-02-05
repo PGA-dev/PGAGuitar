@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage';
 import Header from './site/Header';
 import Footer from './site/Footer';
 import NavHeader from './site/NavHeader';
-import GuitarDirectory from './pages/GuitarDirectory';
+import GuideDirectory from './pages/GuideDirectory';
 import GuitarDetailPage from './pages/GuitarDetailPage';
 import './App.css';
 import AboutPage from './pages/AboutPage';
@@ -20,9 +20,9 @@ function App() {
         <Route path='contact' element={<ContactPage />} />
         <Route path='about' element={<AboutPage />} />
         <Route path='guideaboutpage' element={<GuideAboutPage />} />
-        <Route path='guitardirectory' element={<GuitarDirectory />} />
+        <Route path='guidedirectory' element={<GuideDirectory />} />
         <Route
-          path='guitardirectory/:guitarid'
+          path='guidedirectory/:guitarid'
           element={<GuitarDetailPage />}
         />
       </Routes>
