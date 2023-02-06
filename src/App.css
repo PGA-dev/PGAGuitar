@@ -1,5 +1,7 @@
+
 body {
     font-family: 'papyrus', fantasy;
+
 }
 
 h1,
@@ -7,8 +9,14 @@ h2,
 h3,
 .card-body > .card-title {
     font-family: 'papyrus', fantasy;
-    
+
 }
+
+h1 {
+    font-family: 'papyrus';
+    color: slateblue;
+}
+
 
 .card-title {
     font-weight: 500;
@@ -22,7 +30,7 @@ h3,
     color:aqua;
 }
 h2 {
-    color: #3046c5;
+    color: aqua;
 }
 
 .card-img-overlay .card-title {
@@ -34,7 +42,7 @@ h2 {
 
 .row-content {
     padding: 50px 0;
-    border-bottom: 1px ridge;
+    border-bottom: 0px ridge;
     min-height: 200px;
 }
 
@@ -42,7 +50,7 @@ h2 {
     background-image: radial-gradient(black, #09155a );
     padding: 20px 0;
     margin-top: black 4rem;
-    border-top: #20678b solid;
+    border-top: #3894c2 solid;
     font-family: papyrus;
 }
 
@@ -103,11 +111,17 @@ h2 {
 }
 
 #bgcard {
-    border: #20678b ridge 5px;
+    border: #2e80aa ridge 5px;
     background-color: black;
 }
 
 #gdetail {
     border: #20678b ridge 5px;
     background-color: black;
+}
+
+#footsy{
+    color: aqua;
+    font-size: 20px;
+    font-family: papyrus
 }
