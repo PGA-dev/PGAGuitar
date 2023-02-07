@@ -8,12 +8,8 @@ const GuitarDetail = ({ guitar }) => {
             <Card  id='gdetail' >
                 <CardImg top src={image} alt={name} />
                 <CardBody>
-                    <CardText>
-                        <div>
-                            <h4 className='text-center' m-2>
+                    <CardText className='text-center'>
                                 {name}
-                            </h4>
-                        </div>
                     </CardText>
                 </CardBody>
             </Card>

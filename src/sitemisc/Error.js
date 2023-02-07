@@ -1,11 +1,11 @@
 //import { Col } from "reactstrap";
 
 
-const Error = ({ errMsg }) => {
+const Error = ({ errorMsg }) => {
     return (
         <>
         <h1 style={errorHead}>Aaaaahhhhhh...you broke it!!!!</h1>
-            <h4 style={errorStyle}>{errMsg}</h4>
+            <h4 style={errorStyle}>{errorMsg}</h4>
         </>
     );
 };

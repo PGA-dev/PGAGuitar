@@ -17,12 +17,12 @@ const FrontEndDisplay = () => {
 return(
     <Row>
         {features.map((feature, idx) => {
-            const { frontFeature, isLoading, errMsg } = feature;
+            const { frontFeature, isLoading, errorMsg } = feature;
             if (isLoading) {
                 return <Loading key={idx} />;
             }
-            if (errMsg) {
-                return <Error errMsg={errMsg} key={idx} />;
+            if (errorMsg) {
+                return <Error errorMsg={errorMsg} key={idx} />;
             }
             return (
                 frontFeature && (

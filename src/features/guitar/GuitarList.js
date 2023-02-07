@@ -10,15 +10,15 @@ const GuitarList = () => {
     const guitar = useSelector(selectAllGuitar);
     console.log('guitar:', guitar);
     const isLoading = useSelector((state) => state.guitar.isLoading);
-    const errMsg = useSelector((state) => state.guitar.errMsg);
+    const errorMsg = useSelector((state) => state.guitar.errorMsg);
 
     return isLoading ? (
         <Row>
                 <Loading />
         </Row>
-    ) : errMsg ? (
+    ) : errorMsg ? (
         <Row>
-                <Error errMsg={errMsg} />
+                <Error errorMsg={errorMsg} />
         </Row>
     ) : (
         <Row className='ms-auto'>

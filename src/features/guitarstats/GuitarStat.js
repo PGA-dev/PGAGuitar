@@ -1,25 +1,20 @@
+//import { Col } from "reactstrap";
 
 const GuitarStat = ({ guitarstat }) => {
     const { nameMan, Manufacture1URL, Manufacture2URL, Manufacture3URL } = guitarstat;
     return (
         <>
-            <p style={{ padding: '2px', fontFamily: 'papyrus', color: 'blueviolet' }} >
-                <ul><span style={{fontsize: '35px', color: 'blue'}}>{nameMan}</span>
+                <ul className='list-unstyled' style={{ padding: '2px', fontFamily: 'papyrus', color: 'blueviolet' }}>
                     <li>
-                        
-                        {Manufacture1URL}
+                        <a href={Manufacture1URL}>{Manufacture1URL}</a>
                     </li>
                     <li>
-                        
-                        {Manufacture2URL}
+                    <a href={Manufacture2URL}>{Manufacture2URL}</a>
                     </li>
                     <li>
-                        
-                        {Manufacture3URL}
+                    <a href={Manufacture3URL}>{Manufacture3URL}</a>
                     </li>
                 </ul>
-                <div style={{ padding: '2px', fontFamily: 'papyrus', color: 'aqua' }}></div>
-            </p>
         </>
     );
 };

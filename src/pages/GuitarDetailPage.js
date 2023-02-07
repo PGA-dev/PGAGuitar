@@ -15,13 +15,13 @@ const GuitarDetailPage = () => {
     console.log('guitar', guitar)
 
     const isLoading = useSelector((state) => state.guitar.isLoading);
-    const errMsg = useSelector((state) => state.guitar.errMsg);
+    const errorMsg = useSelector((state) => state.guitar.errorMsg);
     let content = null;
 
     if (isLoading) {
         content = <Loading />;
-    } else if (errMsg) {
-        content = <Error errMsg={errMsg} />;
+    } else if (errorMsg) {
+        content = <Error errorMsg={errorMsg} />;
     } else {
         content = (
             <>

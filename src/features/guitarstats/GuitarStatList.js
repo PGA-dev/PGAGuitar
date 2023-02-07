@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 const GuitarStatList = ({ guitarid }) => {
     const guitarstats = useSelector(selectStatByGuitarId(guitarid));
     const isLoading = useSelector((state) => state.guitarstat.isLoading);
-    const errMsg = useSelector((state) => state.guitarstat.errMsg);
+    const errorMsg = useSelector((state) => state.guitarstat.errorMsg);
 
     if (isLoading) {
         return (
@@ -16,9 +16,9 @@ const GuitarStatList = ({ guitarid }) => {
         );
     }
 
-    if (errMsg) {
+    if (errorMsg) {
         return (
-            <Error errMsg={errMsg} />
+            <Error errorMsg={errorMsg} />
         );
     }
 

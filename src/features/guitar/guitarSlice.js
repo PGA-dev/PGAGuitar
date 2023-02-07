@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 //import { GUITAR } from "../../app/shared/GUITAR";
 import { baseUrl } from '../../app/shared/baseUrl';
-import { mapImageURL } from "../../sitemisc/mapImageURL";
+import { concatImgURL } from "../../sitemisc/concatImgURL";
 
 
 export const fetchGuitar = createAsyncThunk(
@@ -18,7 +18,7 @@ export const fetchGuitar = createAsyncThunk(
 const initialState = {
     guitarArray: [],
     isLoading: true,
-    errMsg: ''
+    errorMsg: ''
 };
 
 const guitarSlice = createSlice({
@@ -31,12 +31,12 @@ const guitarSlice = createSlice({
         },
         [fetchGuitar.fulfilled]: (state, action) => {
             state.isLoading = false;
-            state.errMsg = '';
-            state.guitarArray = mapImageURL(action.payload);
+            state.errorMsg = '';
+            state.guitarArray = concatImgURL(action.payload);
         },
         [fetchGuitar.rejected]: (state, action) => {
             state.isLoading = false;
-            state.errMsg = action.error ? action.error.message : 'Fetch failed';
+            state.errorMsg = action.error ? action.error.message : 'Fetch failed';
         }
     }
 });
@@ -45,11 +45,9 @@ const guitarSlice = createSlice({
 export const guitarReducer = guitarSlice.reducer;
 
 
-
 export const selectAllGuitar = (state) => {
     return state.guitar.guitarArray;
 };
-
 
 export const selectGuitarById = (guitarid) => (state) =>{
     return state.guitar.guitarArray.find(
