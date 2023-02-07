@@ -1,7 +1,7 @@
 //import { Col } from "reactstrap";
 
 
-const Error = ({ errorMsg }) => {
+const ErrorMessage = ({ errorMsg }) => {
     return (
         <>
         <h1 style={errorHead}>Aaaaahhhhhh...you broke it!!!!</h1>
@@ -24,4 +24,4 @@ const errorHead = {
     fontFamily: "papyrus"
 };
 
-export default Error;
+export default ErrorMessage;

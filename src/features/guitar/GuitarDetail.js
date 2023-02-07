@@ -2,7 +2,7 @@ import { Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
 //import { Link } from 'react-router-dom';
 const GuitarDetail = ({ guitar }) => {
     const { image, name } = guitar;
-
+    
     return (
         <Col md='12' className='m-1'>
             <Card  id='gdetail' >

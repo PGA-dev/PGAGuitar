@@ -5,8 +5,8 @@ import { selectGuitarById } from '../features/guitar/guitarSlice';
 import GuitarDetail from '../features/guitar/GuitarDetail';
 import GuitarStatList from '../features/guitarstats/GuitarStatList';
 import SubHeader from '../site/SubHeader';
-import Error from '../sitemisc/Error';
-import Loading from '../sitemisc/Loading';
+import ErrorMessage from '../sitemisc/ErrorMessage';
+import LoadingMessage from '../sitemisc/LoadingMessage';
 
 
 const GuitarDetailPage = () => {
@@ -19,9 +19,9 @@ const GuitarDetailPage = () => {
     let content = null;
 
     if (isLoading) {
-        content = <Loading />;
+        content = <LoadingMessage />;
     } else if (errorMsg) {
-        content = <Error errorMsg={errorMsg} />;
+        content = <ErrorMessage errorMsg={errorMsg} />;
     } else {
         content = (
             <>

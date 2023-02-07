@@ -7,7 +7,8 @@ export const fetchGuitarStat = createAsyncThunk(
     async () => {
         const response = await fetch(baseUrl + 'guitarstat');
         if (!response.ok) {
-            return Promise.reject('Unable to fetch, status: ' + response.status);
+            return Promise.reject('Fetch Failed status: ' + response.status);
+
         }
         const data = await response.json();
         return data;

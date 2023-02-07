@@ -60,7 +60,7 @@ export const selectFeaturedGuitar1 = (state) => {
         frontFeature: state.guitar.guitarArray.find(
             (guitar) => guitar.featured === 1),
             isLoading: state.guitar.isLoading,
-            errMsg: state.guitar.errMsg
+            errorMsg: state.guitar.errorMsg
     };
 };
 
