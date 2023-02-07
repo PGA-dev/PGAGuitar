@@ -1,6 +1,6 @@
 //import { GUITARSTAT } from '../../app/shared/GUITARSTAT';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { baseUrl } from '../../app/shared/baseUrl';
+import { baseUrl } from '../../sitemisc/baseUrl';
 
 export const fetchGuitarStat = createAsyncThunk(
     'guitarstat/fetchGuitarStat',
@@ -8,7 +8,6 @@ export const fetchGuitarStat = createAsyncThunk(
         const response = await fetch(baseUrl + 'guitarstat');
         if (!response.ok) {
             return Promise.reject('Fetch Failed status: ' + response.status);
-
         }
         const data = await response.json();
         return data;
@@ -36,7 +35,7 @@ const guitarstatSlice = createSlice({
         },
         [fetchGuitarStat.rejected]: (state, action) => {
             state.isLoading = false;
-            state.errorMsg = action.error ? action.error.message : 'Fetch failed';
+            state.errorMsg = action.error ? action.error.message : 'Data Fetch failed';
         }
     }
 });
