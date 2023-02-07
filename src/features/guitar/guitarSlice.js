@@ -69,7 +69,7 @@ export const selectFeaturedGuitar2 = (state) => {
         frontFeature: state.guitar.guitarArray.find(
             (guitar) => guitar.featured === 2),
             isLoading: state.guitar.isLoading,
-            errMsg: state.guitar.errMsg
+            errorMsg: state.guitar.errorMsg
     };
 };
 
@@ -78,7 +78,7 @@ export const selectFeaturedGuitar3 = (state) => {
         frontFeature: state.guitar.guitarArray.find(
             (guitar) => guitar.featured === 3),
             isLoading: state.guitar.isLoading,
-            errMsg: state.guitar.errMsg
+            errorMsg: state.guitar.errorMsg
     };
 };
 
