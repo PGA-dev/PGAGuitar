@@ -7,7 +7,7 @@ import GuitarStatList from '../features/guitarstats/GuitarStatList';
 import SubHeader from '../site/SubHeader';
 import ErrorMessage from '../sitemisc/ErrorMessage';
 import LoadingMessage from '../sitemisc/LoadingMessage';
-
+import GuitarStatList2 from '../features/guitarstats2/GuitarStatList2';
 
 const GuitarDetailPage = () => {
     const { guitarid } = useParams();
@@ -26,6 +26,7 @@ const GuitarDetailPage = () => {
         content = (
             <>
                 <GuitarDetail guitar={guitar} />
+                <GuitarStatList2 guitarid={guitarid} />
                 <GuitarStatList guitarid={guitarid} />
             </>
         );
@@ -34,27 +35,6 @@ const GuitarDetailPage = () => {
         <Container>
             {guitar && <SubHeader current={guitar.name} detail={true} />}
             <Row>{content}</Row>
-            <Row>
-                <div>
-                    <h5>
-                        this is my h5 heading
-                    </h5>
-                </div>
-            </Row>
-            <Row>
-                <div>
-                    <h5>
-                        this is my h5 heading2
-                    </h5>
-                </div>
-            </Row>
-            <Row>
-                <div>
-                    <h5>
-                        this is my h5 heading3
-                    </h5>
-                </div>
-            </Row>
         </Container>
     );
 };
