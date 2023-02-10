@@ -1,0 +1,5 @@
+.box, .box::placeholder{
+    color:aqua;
+    font-family: papyrus;
+    border: none;
+}
