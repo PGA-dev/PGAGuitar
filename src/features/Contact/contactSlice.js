@@ -64,12 +64,11 @@ const contactSlice = createSlice({
             state.isLoading = false;
             state.errMsg = action.error ? action.error.message : 'Fetch failed';
         },
-        [fetchContact.rejected]: (state, action) => {
+        [postContact.rejected]: (state, action) => {
             alert(
-                'Your comment could not be posted\nError: ' +
+                'Sorry Chatterbox, your contact feedback message could not be posted\nError: ' +
             (action.error ? action.error.message : 'Fetch failed')
             );
-
         }
     }
 });
