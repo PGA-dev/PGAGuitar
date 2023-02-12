@@ -1,14 +1,14 @@
 import { Col } from 'reactstrap';
-import GuitarStat from './GuitarStat';
-import { selectStatByGuitarId } from './guitarStatSlice';
+import GuitarStat3 from './GuitarStat3';
+import { selectStatByGuitarId3 } from './guitarStatSlice3';
 import ErrorMessage from '../../sitemisc/ErrorMessage';
 import LoadingMessage from '../../sitemisc/LoadingMessage';
 import { useSelector } from "react-redux";
 
-const GuitarStatList = ({ guitarid }) => {
-    const guitarstats = useSelector(selectStatByGuitarId(guitarid));
-    const isLoading = useSelector((state) => state.guitarstat.isLoading);
-    const errorMsg = useSelector((state) => state.guitarstat.errorMsg);
+const GuitarStatList3 = ({ guitarid }) => {
+    const guitarstats3 = useSelector(selectStatByGuitarId3(guitarid));
+    const isLoading = useSelector((state) => state.guitarstat3.isLoading);
+    const errorMsg = useSelector((state) => state.guitarstat3.errorMsg);
 
     if (isLoading) {
         return (
@@ -22,12 +22,12 @@ const GuitarStatList = ({ guitarid }) => {
         );
     }
 
-    if (guitarstats && guitarstats.length > 0) {
+    if (guitarstats3 && guitarstats3.length > 0) {
         return (
             <Col md='12' className='m-1'>
-                <h4 style={{ padding: '2px', fontFamily: 'papyrus', color: 'aqua' }}><b>External Links</b></h4>
-                {guitarstats.map((guitarstat) => {
-                    return <GuitarStat key={guitarstat.id} guitarstat={guitarstat} />;
+                <h4 style={{ padding: '2px', fontFamily: 'papyrus', color: 'aqua' }}><b>Stat3</b></h4>
+                {guitarstats3.map((guitarstat3) => {
+                    return <GuitarStat3 key={guitarstat3.id} guitarstat3={guitarstat3} />;
                 })}
             </Col>
         );
@@ -39,4 +39,4 @@ const GuitarStatList = ({ guitarid }) => {
     );
 };
 
-export default GuitarStatList;
+export default GuitarStatList3;
