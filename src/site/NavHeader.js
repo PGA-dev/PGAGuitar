@@ -22,6 +22,7 @@ const NavHeader = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [toggle, setToggle] = useState(false);
 
+
     const animatedStyle = useSpring({
         opacity: toggle ? 1 : 0,
         transform: toggle ? 'scale(1,1)' : 'scale(0,0)',
@@ -52,11 +53,11 @@ const NavHeader = () => {
                     </animated.div>
                     <animated.div style={animatedStyle}>
                         <UncontrolledDropdown nav inNavbar >
-                            <DropdownToggle   nav caret style={navHead2}>
+                            <DropdownToggle nav caret style={navHead2}>
                                 <div style={navy2} className='fa fa-cogs fa-sm '><span style={navHead1} >Guide Directory</span></div>
                             </DropdownToggle>
                             <DropdownMenu>
-                                <DropdownItem  style={navList1}  href='/guidedirectory/0'>Guitar Body</DropdownItem>
+                                <DropdownItem style={navList1} href='/guidedirectory/0'>Guitar Body</DropdownItem>
                                 <DropdownItem style={navList2} href='/guidedirectory/1'>Guitar Neck</DropdownItem>
                                 <DropdownItem style={navList1} href='/guidedirectory/2'>Guitar Strings</DropdownItem>
                                 <DropdownItem style={navList2} href='/guidedirectory/3'>Guitar Bridges</DropdownItem>
@@ -100,7 +101,9 @@ const NavHeader = () => {
                                     placeholder="Guide Search"
                                     type="search"
                                 />
+
                             </FormGroup>
+
                         </Form>
                     </animated.div>
                 </Nav>
@@ -109,17 +112,17 @@ const NavHeader = () => {
     );
 };
 //(css alternative) stylesheet
-const navHead1= {
+const navHead1 = {
     color: "magenta",
     fontFamily: "papyrus"
 };
 
-const navHead2= {
+const navHead2 = {
     color: "aqua",
     fontFamily: "papyrus"
 };
 
-const navList1= {
+const navList1 = {
     color: "magenta",
     padding: "15px",
     margin: "5px 40px",
@@ -127,7 +130,7 @@ const navList1= {
     fontFamily: "papyrus"
 };
 
-const navList2= {
+const navList2 = {
     color: "aqua",
     padding: "15px",
     margin: "5px 40px",
@@ -135,21 +138,21 @@ const navList2= {
     fontFamily: "papyrus"
 };
 
-const navborder= {
+const navborder = {
     color: "aqua",
     border: "aqua ridge 5px",
     fontFamily: "papyrus"
 };
 
-const navy= {
+const navy = {
     color: "slateblue",
 };
 
-const navy2= {
+const navy2 = {
     color: "aqua",
 };
 
-const navy3= {
+const navy3 = {
     color: "magenta",
 };
 
