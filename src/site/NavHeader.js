@@ -6,9 +6,6 @@ import {
     NavbarToggler,
     Nav,
     NavItem,
-    Form,
-    FormGroup,
-    Input,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
@@ -16,7 +13,7 @@ import {
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
-import navs from '../../src/Nav.module.css';
+
 
 const NavHeader = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -38,6 +35,59 @@ const NavHeader = () => {
     useEffect(() => {
         setToggle(true);
     }, []);
+
+    //(css alternative) stylesheet
+    const navHead1 = {
+        color: "magenta",
+        fontFamily: "papyrus"
+    };
+
+    const navHead2 = {
+        color: "aqua",
+        fontFamily: "papyrus"
+    };
+
+    const navList1 = {
+        color: "magenta",
+        padding: "15px",
+        margin: "5px 40px",
+        fontSize: "25px",
+        fontFamily: "papyrus"
+    };
+
+    const navList2 = {
+        color: "aqua",
+        padding: "15px",
+        margin: "5px 40px",
+        fontSize: "25px",
+        fontFamily: "papyrus"
+    };
+
+    const navborder = {
+        color: "aqua",
+        border: "aqua ridge 5px",
+        fontFamily: "papyrus"
+    };
+
+    const navy = {
+        color: "slateblue",
+    };
+
+    const navy2 = {
+        color: "aqua",
+    };
+
+    const navy3 = {
+        color: "magenta",
+    };
+
+    // const useNav = () => {
+    //     const [style, setStyle] = useState(footstyleLink);
+    //     const onMouseEnter = () => setStyle(footstyleHover3)
+    //     const onClick = () => setStyle(footstyleClick)
+    //     const onMouseLeave = () => setStyle(footstyleLink)
+    //     return { style, onClick, onMouseEnter, onMouseLeave }
+    // }
 
     return (
         <Navbar id='navhead' dark color='primary' sticky='top' expand='lg'>
@@ -93,67 +143,20 @@ const NavHeader = () => {
                         </NavItem>
                     </animated.div>
                     <animated.div style={animatedStyle}>
-                        <Form >
-                            <FormGroup >
-                                <Input className={navs.box}
-                                    id="guideSearch"
-                                    name="search"
-                                    placeholder="Guide Search"
-                                    type="search"
-                                />
-
-                            </FormGroup>
-
-                        </Form>
+                        <UncontrolledDropdown nav inNavbar >
+                            <DropdownToggle nav caret style={navHead2}>
+                                <div style={navy2} className='fa fa-cogs fa-sm '><span style={navHead1} >Site</span></div>
+                            </DropdownToggle>
+                            <DropdownMenu>
+                                <DropdownItem style={navList1} href='/guidesitemap'>Site Map</DropdownItem>
+                                <DropdownItem style={navList2} href='/guidesiteref'>Site References</DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
                     </animated.div>
                 </Nav>
             </Collapse>
         </Navbar>
     );
-};
-//(css alternative) stylesheet
-const navHead1 = {
-    color: "magenta",
-    fontFamily: "papyrus"
-};
-
-const navHead2 = {
-    color: "aqua",
-    fontFamily: "papyrus"
-};
-
-const navList1 = {
-    color: "magenta",
-    padding: "15px",
-    margin: "5px 40px",
-    fontSize: "25px",
-    fontFamily: "papyrus"
-};
-
-const navList2 = {
-    color: "aqua",
-    padding: "15px",
-    margin: "5px 40px",
-    fontSize: "25px",
-    fontFamily: "papyrus"
-};
-
-const navborder = {
-    color: "aqua",
-    border: "aqua ridge 5px",
-    fontFamily: "papyrus"
-};
-
-const navy = {
-    color: "slateblue",
-};
-
-const navy2 = {
-    color: "aqua",
-};
-
-const navy3 = {
-    color: "magenta",
 };
 
 

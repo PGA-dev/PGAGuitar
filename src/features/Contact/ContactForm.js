@@ -45,19 +45,22 @@ const ContactForm = () => {
     }
 
     const btnHover = {
-        color: 'blue',
-        backgroundColor: 'magenta',
+        color: 'magenta',
+        backgroundColor: 'slateblue',
         border: '5px solid white',
         borderRadius: '15px',
-        boxShadow: '0 8px blue'
+        boxShadow: '0 8px aqua'
     }
 
     const btnActive = {
-        backgroundColor: 'aqua',
-        color: 'magenta',
-        boxShadow: '0 5px rgb(120, 120, 120)',
+        backgroundColor: '#FF3131',
+        color: 'aqua',
+        border: '5px solid violet',
+        borderRadius: '15px',
+        boxShadow: '0 8px rgb(120, 120, 120)',
         transform: 'translateY(5px)'
     }
+
 
     const active = useActive();
 

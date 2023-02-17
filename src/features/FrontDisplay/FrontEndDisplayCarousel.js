@@ -11,6 +11,7 @@ import {
 import ErrorMessage from '../../sitemisc/ErrorMessage';
 import LoadingMessage from '../../sitemisc/LoadingMessage';
 import { selectAllFrontItems } from './frontSlice'
+import { Link } from 'react-router-dom';
 
 
 const FrontDisplayCarousel = () => {
@@ -23,6 +24,28 @@ const FrontDisplayCarousel = () => {
     const errorMsg = useSelector((state) => state.frontitems.errorMsg);
 
     const itemLength = frontitems.length - 1
+
+    const cursorDefault = {
+        cursor: 'default',
+        opacity: '98'
+
+    }
+
+    const crossHover = {
+        cursor: 'crosshair',
+        opacity: '.87'
+    };
+
+
+    const useCross = () => {
+        const [style, setStyle] = useState(cursorDefault);
+        const onMouseEnter = () => setStyle(crossHover)
+        const onMouseLeave = () => setStyle(cursorDefault)
+        return { style, onMouseEnter, onMouseLeave }
+    }
+
+    const uc = useCross();
+
 
     const previousButton = () => {
         if (animating) return;
@@ -58,7 +81,7 @@ const FrontDisplayCarousel = () => {
                     onExited={() => setAnimating(false)}
                     onExiting={() => setAnimating(true)}
                 >
-                    <img src={item.src} alt={item.altText} />
+                    <Link to={'/about'}><img {...uc} src={item.src} alt={item.altText} /></Link>
                 </CarouselItem>
             );
         });
