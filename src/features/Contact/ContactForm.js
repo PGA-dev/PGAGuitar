@@ -61,7 +61,6 @@ const ContactForm = () => {
         transform: 'translateY(5px)'
     }
 
-
     const active = useActive();
 
     return <Formik
