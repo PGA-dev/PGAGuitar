@@ -19,6 +19,7 @@ const NavHeader = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [toggle, setToggle] = useState(false);
 
+
     const animatedStyle = useSpring({
         opacity: toggle ? 1 : 0,
         transform: toggle ? 'scale(1,1)' : 'scale(0,0)',
@@ -182,6 +183,7 @@ const NavHeader = () => {
 
     const unlTwo1 = useNavlist2();
     const unlTwo2 = useNavlist1();
+
 
     return (
         <Navbar id='navhead' dark color='primary' sticky='top' expand='lg'>
