@@ -25,4 +25,5 @@ const GuitarStat3 = ({ guitarstat3 }) => {
     );
 };
 
+
 export default GuitarStat3;

@@ -1,6 +1,52 @@
-body {
-    font-family: 'papyrus', fantasy;
+:root {
+    --info-clr: aqua;
+    --secondary-clr: grey;
+    --danger-clr: magenta;
+    --success-clr: #49fb35;
+    --info-subtle: slateblue;
+    --danger-almost: #a424ff;
+    --body-clr: black;
+    --primary-clr: #09155a;
+    --light-clr: white;
+    --light-2nd: #d8f8f8;
+    --dark-clr: #333333;
+    --border-clr: #20678b;
 
+    --border-std: 5px solid #20678b;
+    --text-dec-std: none;
+    --text-dec-line: underline;
+
+    --font-main: 'papyrus';
+    --font-sec: arial;
+
+    --fw-norm: 300;
+    --fw--normbr: 500;
+    --fw--bright: 700;
+    --fw--bright-wow: 900;
+
+}
+
+
+
+body {
+    font-family: var(--font-fam), fantasy;
+    color: var(--info-clr)
+}
+
+a {
+    color: var(--info-clr);
+    font-size: 25px;
+    text-decoration: var(--text-dec-std);
+    font-weight: var(--fw--normbr);
+
+}
+
+p {
+    color: var(--info-subtle);
+    font-size: 25px;
+    text-decoration: var(--text-dec-std);
+    font-weight: var(--fw--bright);
+    font-family: var(--font-main);
 }
 
 h1,
@@ -8,43 +54,106 @@ h2,
 h3,
 h4,
 .card-body>.card-title {
-    font-family: 'papyrus', fantasy;
+    font-family: var(--font-main), fantasy;
 
 }
 
+/* Used for Card Headings */
+h4 {
+    padding: 2px;
+    font-family: papyrus;
+    font-size: 40px;
+    color: #a424ff;
+    font-weight: 900
+}
+
 h1 {
-    font-family: 'papyrus';
-    color: slateblue;
+    font-family: var(--font-main);
+    color: var(--info-clr);
+}
+
+
+.btn:hover {
+    color: var(--body-clr);
+    background-color: var(--info-clr);
+    border: 5px solid var(--light-clr);
+    border-radius: 15px;
+    box-shadow: 0 8px var(--primary-clr);
+}
+
+.btn:active {
+    background-color: var(--body-clr);
+    color: var(--info-clr);
+    box-shadow: 0 5px var(--secondary-clr);
+    transform: translateY(5px);
+
+}
+
+.btn,
+.btn:visited,
+.btn:link,
+.btn:disabled {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--font-main);
+    outline: none;
+    color: var(--info-clr);
+    background-color: var(--info-subtle);
+    border: 5px solid var(--secondary-clr);
+    border-radius: 15px;
+    box-shadow: 0 8px var(--dark-clr);
 }
 
 
 .card-title {
-    font-weight: 500;
+    font-weight: var(--font-main);
     font-size: 1.25rem;
     font-family: papyrus;
-    color: #901cad;
+    color: var(--danger-clr);
 }
+
+
 
 .card-body {
 
-    font-family: papyrus;
-    color: aqua;
+    font-family: var(--font-main);
+    color: var(--light-2nd);
 }
 
 h2 {
     color: aqua;
+    font-family: var(--font-main);
 }
 
-.card-img-overlay .card-title {
-    color: #061568;
-    font-size: 35px;
-    background-color: rgba(0, 0, 0, .2);
-    font-family: papyrus;
+.card,
+.card-text {
+    color: var(--info-clr);
+    text-decoration: var(--text-dec-std);
 }
+
+
+.card-img-overlay>.card-title {
+    color: var(--danger-clr);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 900;
+    font-size: 65px;
+}
+
+#linkCSS {
+    color: var(--info-clr);
+    padding: 15px;
+    margin: 20px;
+    font-size: 35px;
+    font-family: var(--font-main);
+    font-weight: 700;
+    text-decoration: none;
+}
+
 
 .row-border {
     padding: 50px 0;
-    border-bottom: 0px ridge;
+    border-bottom: 5px ridge;
     min-height: 200px;
 }
 
@@ -77,6 +186,15 @@ h2 {
     transition: 300ms ease-in;
 }
 
+.card>.card-img {
+    border: #20678b ridge 5px;
+}
+
+#crdimg2 {
+    border: #20678b ridge 3px;
+    background-color: black;
+}
+
 #title {
     font-size: 75px;
     color: fuchsia;
@@ -107,8 +225,8 @@ h2 {
 }
 
 #frontcard {
-    color: blue;
-    border: #20678b ridge 5px;
+    color: var(--primary-clr);
+    border: var(--border-clr) ridge 5px;
     background-color: black;
 }
 
@@ -117,39 +235,82 @@ h2 {
     background-color: black;
 }
 
+#bgcard2 {
+    border: #2e80aa ridge 5px;
+    background-color: black;
+    opacity: .94;
+}
+
+
 #gdetail {
-    border: #20678b ridge 5px;
+    color: chartreuse;
+    font-weight: 900;
+    font-size: 45px;
+    border: #2e80aa ridge 5px;
     background-color: black;
 }
 
-#footsy {
-    color: aqua;
-    font-size: 20px;
-    font-family: papyrus
+/*Footer Head*/
+h5 {
+    color: var(--danger-almost);
+    padding: 5px;
+    font-size: 40px;
+    font-family: var(--font-main);
+    font-weight: var(--fw--bright-wow);
+    text-decoration: var(--text-dec-line)
 }
 
-/* #contactBtn {
-    display: inline-block;
-    text-decoration: none;
-    outline: none;
-    color: aqua;
-    background-color: blue;
-    border: 5px solid grey;
-    border-radius: 15px;
-    box-shadow: 0 8px rgb(88, 88, 104);
-}
-
-#contactBtn:hover {
-    color: black;
-    background-color: aqua;
-    border: 5px solid white;
-    border-radius: 15px;
-    box-shadow: 0 8px blue;
-}
-
-#contactBtn:active {
-    background-color: rgb(88, 88, 104);
-    color: aqua;
-    box-shadow: 0 5px rgb(120, 120, 120);
-    transform: translateY(5px);
+/* h5:hover {
+    color: magenta;
+    padding: 5px;
+    font-size: 40px;
+    font-family: Papyrus;
+    font-weight: 900;
+    text-decoration: var(--text-dec-line)
 } */
+
+/* carousel stuff */
+
+
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+} */
+
+
+/*  
+
+To swap them for font awesome with pure CSS:
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-prev-icon:after, .carousel-control-next-icon:after {     
+  content: "\f053";
+  font-family: 'Font Awesome 5 Free', sans-serif;
+}
+
+.carousel-control-next-icon:after {
+  content: "\f054";
+}*/

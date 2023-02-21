@@ -1,30 +1,26 @@
 import { Card, CardText } from 'reactstrap';
-//import { Link } from 'react-router-dom';
+import { linksUrl } from '../../sitemisc/linksUrl';
+
 
 
 //Used in Site Map
 const LinksCard = ({ links }) => {
     const { id, name, url } = links;
 
+    const cardURL = linksUrl + url;
     return (
-        <Card style={cardCSS}>
-            <CardText><a style={linkCSS} href={url}>{name}</a></CardText>
+        <Card style={cardCSS} className=' mb-4'>
+            <CardText><a id='linkCSS' href={cardURL}>{name}</a></CardText>
         </Card>
 
     );
 }
 
-const linkCSS = {
-    color: "aqua",
-    padding: "15px",
-    margin: "20px",
-    fontSize: "35px",
-    fontFamily: "Papyrus",
-    textDecoration: 'none'
-};
 
 const cardCSS = {
-    margin: "20px",
-};
+    margin: '20px',
+    border: '5px solid slateblue'
+}
+
 
 export default LinksCard;

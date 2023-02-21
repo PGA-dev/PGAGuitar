@@ -6,23 +6,6 @@ import { useState } from 'react';
 const Footer = () => {
 
     //keep padding, margins, fontFamily and fontWeights in for posible mod later
-    const footstyleHead = {
-        color: "magenta",
-        padding: "5px",
-        fontSize: "40px",
-        fontFamily: "Papyrus",
-        fontWeight: 500,
-        textDecoration: 'none'
-    };
-
-    const footstyleHeadHover = {
-        color: "magenta",
-        padding: "5px",
-        fontSize: "40px",
-        fontFamily: "Papyrus",
-        fontWeight: 700,
-        textDecoration: 'none'
-    };
 
     const footstyleLink = {
         color: "aqua",
@@ -34,7 +17,7 @@ const Footer = () => {
 
     const footstyleClick = {
         color: "slateblue",
-        fontSize: "24px",
+        fontSize: "28px",
         padding: "5px 3px",
         fontFamily: "Papyrus",
         fontWeight: 100,
@@ -43,7 +26,7 @@ const Footer = () => {
 
     const footstyleHover = {
         color: "magenta",
-        fontSize: "24px",
+        fontSize: "26px",
         padding: "5px 3px",
         fontFamily: "Papyrus",
         fontWeight: 900,
@@ -53,7 +36,7 @@ const Footer = () => {
 
     const footstyleClick2 = {
         color: "magenta",
-        fontSize: "24px",
+        fontSize: "28px",
         padding: "5px 3px",
         fontFamily: "Papyrus",
         fontWeight: 100,
@@ -62,7 +45,7 @@ const Footer = () => {
 
     const footstyleHover2 = {
         color: "white",
-        fontSize: "24px",
+        fontSize: "26px",
         padding: "5px 3px",
         fontFamily: "Papyrus",
         fontWeight: 900,
@@ -72,7 +55,7 @@ const Footer = () => {
 
     const footstyleHover3 = {
         color: '#0d6efd',
-        fontSize: '24px',
+        fontSize: '26px',
         padding: '5px 3px',
         fontFamily: 'Papyrus',
         fontWeight: 900,
@@ -81,8 +64,8 @@ const Footer = () => {
     };
 
     const footstyleHover4 = {
-        color: "slateblue",
-        fontSize: "24px",
+        color: "#a424ff",
+        fontSize: "26px",
         padding: "5px 3px",
         fontFamily: "Papyrus",
         fontWeight: 900,
@@ -122,18 +105,8 @@ const Footer = () => {
         return { style, onClick, onMouseEnter, onMouseLeave }
     }
 
-    const useFeetHead = () => {
-        const [style, setStyle] = useState(footstyleHead);
-        const onMouseEnter = () => setStyle(footstyleHeadHover)
-        const onMouseLeave = () => setStyle(footstyleHead)
-        return { style, onMouseEnter, onMouseLeave }
-    }
-
     // individual style calls for each link and heading
-    const bgh = useFeetHead();
-    const ach = useFeetHead();
-    const slh = useFeetHead();
-    const olh = useFeetHead();
+
 
     const bg1 = useFeet();
     const bg2 = useFeet();
@@ -163,9 +136,9 @@ const Footer = () => {
     return (
         <footer className='site-footer'>
             <Container>
-                <Row>
+                <Row className='row '>
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
-                        <h5 {...bgh}>Buying Guides</h5>
+                        <h5 id='fhead'>Buying Guides</h5>
                         <ul className='list-unstyled'>
                             <li>
                                 <Link {...bg1} to='/guidedirectory/0'>Guitar Body</Link>
@@ -186,18 +159,17 @@ const Footer = () => {
                     </Col>
 
                     <Col xs='6' sm='3' className='text-center'>
-                        <h5 {...ach}>Author Contact</h5>
+                        <h5 id='fhead'>Author Contact</h5>
                         <ul className='list-unstyled'>
                             <li >
                                 <a {...ac1} href="https://www.linkedin.com/in/paul-adam-86ba423b/" target="_blank" rel="noreferrer">Author LI</a>
                             </li>
                             <li>
-                                <a {...ac2} className='btn btn-link' href='https://www.youtube.com/channel/UCdSa6weDVHCPFJzjE9M4foA' target="_blank" rel="noreferrer">Author's YouTube</a>
+                                <a {...ac2} href='https://www.youtube.com/channel/UCdSa6weDVHCPFJzjE9M4foA' target="_blank" rel="noreferrer">Author's YouTube</a>
                             </li>
                             <li>
                                 <a {...ac3}
                                     role='button'
-                                    className='btn btn-link'
                                     href='mailto:paulgadam@gmail.com'
                                 >
                                     <i {...ac4} className='' /> Author Email
@@ -211,7 +183,7 @@ const Footer = () => {
                     </Col>
 
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
-                        <h5 {...slh}>Site Links</h5>
+                        <h5 id='fhead'>Site Links</h5>
                         <ul className='list-unstyled'>
                             <li>
                                 <Link {...sl1} to='/'>Site Home</Link>
@@ -231,7 +203,7 @@ const Footer = () => {
                         </ul>
                     </Col>
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
-                        <h5 {...olh}>Outside Links</h5>
+                        <h5 id='fhead'>Outside Links</h5>
                         <ul className='list-unstyled'>
                             <li>
                                 <a {...ol1} href="https://www.jemsite.com/" target="_blank" rel="noreferrer">Jemsite</a>
