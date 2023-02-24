@@ -74,6 +74,7 @@ const ContactForm = () => {
         transitionDuration: '0.2s'
     }
 
+
     const errorText = {
         backgroundColor: 'black',
         color: 'magenta',
