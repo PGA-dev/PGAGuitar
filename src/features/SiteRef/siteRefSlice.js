@@ -2,10 +2,10 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { baseUrl } from '../../sitemisc/baseUrl';
 
 
-export const fetchLinks = createAsyncThunk(
-    'links/fetchLinks',
+export const fetchSiteRef = createAsyncThunk(
+    'siteref/fetchSiteref',
     async () => {
-        const response = await fetch(baseUrl + 'links');
+        const response = await fetch(baseUrl + 'siteref');
         if (!response.ok) {
             return Promise.reject('Unable to fetch, status: ' + response.status + response.url);
         }
@@ -14,25 +14,25 @@ export const fetchLinks = createAsyncThunk(
     }
 );
 const initialState = {
-    linksArray: [],
+    siterefArray: [],
     isLoading: true,
     errorMsg: ''
 };
 
-const linksSlice = createSlice({
-    name: 'links',
+const siterefSlice = createSlice({
+    name: 'siteref',
     initialState,
     reducers: {},
     extraReducers: {
-        [fetchLinks.pending]: (state) => {
+        [fetchSiteRef.pending]: (state) => {
             state.isLoading = true;
         },
-        [fetchLinks.fulfilled]: (state, action) => {
+        [fetchSiteRef.fulfilled]: (state, action) => {
             state.isLoading = false;
             state.errorMsg = '';
-            state.linksArray = action.payload;
+            state.siterefArray = action.payload;
         },
-        [fetchLinks.rejected]: (state, action) => {
+        [fetchSiteRef.rejected]: (state, action) => {
             state.isLoading = false;
             state.errorMsg = action.error ? action.error.message : 'Data Fetch failed';
         }
@@ -40,9 +40,9 @@ const linksSlice = createSlice({
 });
 
 
-export const linksReducer = linksSlice.reducer;
+export const siteRefReducer = siterefSlice.reducer;
 
 
-export const selectAllLinks = (state) => {
-    return state.links.linksArray;
+export const selectAllSiteRef = (state) => {
+    return state.siteref.siterefArray;
 };
