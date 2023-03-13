@@ -336,10 +336,12 @@ p {
 
 .form-control {
     background-color: var(--dark-clr);
+    color: var(--info-clr)
 }
 
 .formgroup {
-    background-color: var(--body-clr);   
+    background-color: var(--body-clr); 
+    color: var(--info-clr)  
 }
 
 /*Contact Form error message Formik*/

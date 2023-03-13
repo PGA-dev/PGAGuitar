@@ -55,7 +55,7 @@ const ContactForm = () => {
         validate={validateContactForm}
 
     >
-        <Form>
+        <Form color="aqua">
             <FormGroup row className="formgroup">
                 <Label className="label-text" htmlFor='firstName' md='3'>
                     First Name
@@ -68,7 +68,7 @@ const ContactForm = () => {
                 </Col>
             </FormGroup>
             <FormGroup row  className="formgroup">
-                <Label style={{backgroundColor: 'black'}}className="label-text" htmlFor='lastName' md='3'>
+                <Label style={{backgroundColor: '#111115'}} className="label-text" htmlFor='lastName' md='3'>
                     Last Name
                 </Label>
                 <Col md='12'>
@@ -83,7 +83,7 @@ const ContactForm = () => {
                     Email
                 </Label>
                 <Col md='12'>
-                    <Field className='form-control' name='email' placeholder='Email' />
+                    <Field style={{backgroundColor: '#111115'}} className='form-control' name='email' placeholder='Email' />
                     <ErrorMessage name='email'>
                         {(msg) => <p className="error-text">{msg}</p>}
                     </ErrorMessage>
@@ -94,7 +94,7 @@ const ContactForm = () => {
                     Country
                 </Label>
                 <Col md='12'>
-                    <Field className='form-control' name='country' placeholder='country' />
+                    <Field  style={{backgroundColor: '#111115'}} className='form-control' name='country' placeholder='country' />
                     <ErrorMessage name='country'>
                         {(msg) => <p className="error-text">{msg}</p>}
                     </ErrorMessage>
@@ -105,7 +105,7 @@ const ContactForm = () => {
                     Feedback
                 </Label>
                 <Col md='12'>
-                    <Field className='form-control' name='feedback' placeholder='We appreciate your feedback' as='textarea' rows='4' />
+                    <Field style={{backgroundColor: '#111115'}} className='form-control' name='feedback' placeholder='We appreciate your feedback' as='textarea' rows='4' />
                     <ErrorMessage name='feedback'>
                         {(msg) => <p className="error-text">{msg}</p>}
                     </ErrorMessage>
