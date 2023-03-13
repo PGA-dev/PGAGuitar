@@ -197,7 +197,7 @@ const NavHeader = () => {
                             <DropdownToggle nav caret {...caGD}>
                                 <div style={navy2} className='fa fa-cogs fa-sm '><span {...unGD} >Guide Directory</span></div>
                             </DropdownToggle>
-                            <DropdownMenu>
+                            <DropdownMenu style={{backgroundColor: '#111115'}}>
                                 <DropdownItem {...unlOne1} href='/guidedirectory/0'>Guitar Body</DropdownItem>
                                 <DropdownItem {...unlOne2} href='/guidedirectory/1'>Guitar Neck</DropdownItem>
                                 <DropdownItem {...unlOne3} href='/guidedirectory/2'>Guitar Brands</DropdownItem>
@@ -234,7 +234,7 @@ const NavHeader = () => {
                             <DropdownToggle nav caret {...caS}>
                                 <div style={navy2} className='fa fa-cogs fa-sm '><span {...unS} >Site</span></div>
                             </DropdownToggle>
-                            <DropdownMenu>
+                            <DropdownMenu style={{backgroundColor: '#111115'}}>
                                 <DropdownItem {...unlTwo1} href='/guidesitemap'>Site Map</DropdownItem>
                                 <DropdownItem {...unlTwo2} href='/guidesiteref'>Site References</DropdownItem>
                             </DropdownMenu>

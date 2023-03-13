@@ -334,6 +334,14 @@ p {
     margin: 1px 5px 5px;
 }
 
+.form-control {
+    background-color: var(--dark-clr);
+}
+
+.formgroup {
+    background-color: var(--body-clr);   
+}
+
 /*Contact Form error message Formik*/
 .error-text {
     background-color: var(--body-clr);

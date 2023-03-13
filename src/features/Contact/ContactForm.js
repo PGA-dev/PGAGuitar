@@ -56,29 +56,29 @@ const ContactForm = () => {
 
     >
         <Form>
-            <FormGroup row>
+            <FormGroup row className="formgroup">
                 <Label className="label-text" htmlFor='firstName' md='3'>
                     First Name
                 </Label>
                 <Col md='12'>
-                    <Field className='form-control' name='firstName' placeholder='FirstName' />
+                    <Field style={{backgroundColor: '#111115'}} className='form-control' name='firstName' placeholder='FirstName' />
                     <ErrorMessage name='firstName'>
                         {(msg) => <p className="error-text">{msg}</p>}
                     </ErrorMessage>
                 </Col>
             </FormGroup>
-            <FormGroup row>
-                <Label className="label-text" htmlFor='lastName' md='3'>
+            <FormGroup row  className="formgroup">
+                <Label style={{backgroundColor: 'black'}}className="label-text" htmlFor='lastName' md='3'>
                     Last Name
                 </Label>
                 <Col md='12'>
-                    <Field className='form-control' name='lastName' placeholder='LastName' />
+                    <Field style={{backgroundColor: '#111115'}} className='form-control' name='lastName' placeholder='LastName' />
                     <ErrorMessage name='lastName'>
                         {(msg) => <p className="error-text">{msg}</p>}
                     </ErrorMessage>
                 </Col>
             </FormGroup>
-            <FormGroup row>
+            <FormGroup row className="formgroup">
                 <Label className="label-text" htmlFor='email' md='3'>
                     Email
                 </Label>
@@ -89,7 +89,7 @@ const ContactForm = () => {
                     </ErrorMessage>
                 </Col>
             </FormGroup>
-            <FormGroup row>
+            <FormGroup row className="formgroup">
                 <Label className="label-text" htmlFor='country' md='3'>
                     Country
                 </Label>
@@ -100,7 +100,7 @@ const ContactForm = () => {
                     </ErrorMessage>
                 </Col>
             </FormGroup>
-            <FormGroup row>
+            <FormGroup row className="formgroup">
                 <Label className="label-text" htmlFor='feedback' md='4'>
                     Feedback
                 </Label>
@@ -111,7 +111,7 @@ const ContactForm = () => {
                     </ErrorMessage>
                 </Col>
             </FormGroup>
-            <FormGroup row>
+            <FormGroup row className="formgroup">
                 <Col md={{ size: 10, offset: 0 }}>
                     <Button className="btn"
                         {...active}
