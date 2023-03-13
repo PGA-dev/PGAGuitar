@@ -23,7 +23,7 @@ const GuitarStatList5 = ({ guitarid }) => {
     if (guitarstats5 && guitarstats5.length > 0) {
         return (
             <Col md='12' className='m-1'>
-                <h4> Manufacturer Links</h4>
+                <h4> Manufacturer and Retail Links</h4>
                 {guitarstats5.map((guitarstat5) => {
                     return <GuitarStat5 key={guitarstat5.id} guitarstat5={guitarstat5} />;
                 })}
@@ -31,8 +31,10 @@ const GuitarStatList5 = ({ guitarid }) => {
         );
     }
     return (
-        <Col md='5' className='m-1' style={{ padding: '5px', fontFamily: 'papyrus', color: 'blueviolet' }}>
-            We don't have any stats on this model yet.
+        <Col>
+            {console.log('No stats on this item yet')}
+            <br></br>
+            <br></br>
         </Col>
     );
 };

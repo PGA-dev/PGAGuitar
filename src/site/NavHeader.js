@@ -175,10 +175,6 @@ const NavHeader = () => {
     const unlOne3 = useNavlist1();
     const unlOne4 = useNavlist2();
     const unlOne5 = useNavlist1();
-    const unlOne6 = useNavlist2();
-    const unlOne7 = useNavlist1();
-    const unlOne8 = useNavlist2();
-    const unlOne9 = useNavlist1();
     const unlOne10 = useNavlist2();
 
     const unlTwo1 = useNavlist2();
@@ -204,13 +200,9 @@ const NavHeader = () => {
                             <DropdownMenu>
                                 <DropdownItem {...unlOne1} href='/guidedirectory/0'>Guitar Body</DropdownItem>
                                 <DropdownItem {...unlOne2} href='/guidedirectory/1'>Guitar Neck</DropdownItem>
-                                <DropdownItem {...unlOne3} href='/guidedirectory/2'>Guitar Strings</DropdownItem>
+                                <DropdownItem {...unlOne3} href='/guidedirectory/2'>Guitar Brands</DropdownItem>
                                 <DropdownItem {...unlOne4} href='/guidedirectory/3'>Guitar Bridges</DropdownItem>
                                 <DropdownItem {...unlOne5} href='/guidedirectory/4'>Guitar Pickups</DropdownItem>
-                                <DropdownItem {...unlOne6} href='/guidedirectory/5'>Guitar Frets</DropdownItem>
-                                <DropdownItem {...unlOne7} href='/guidedirectory/6'>Guitar Electronics</DropdownItem>
-                                <DropdownItem {...unlOne8} href='/guidedirectory/7'>Guitar Picks</DropdownItem>
-                                <DropdownItem {...unlOne9} href='/guidedirectory/8'>Guitar Brands</DropdownItem>
                                 <DropdownItem style={navborder} divider />
                                 <DropdownItem {...unlOne10} href='/guidedirectory'>Guide Directory</DropdownItem>
                             </DropdownMenu>
