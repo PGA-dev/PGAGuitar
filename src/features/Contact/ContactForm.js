@@ -104,8 +104,8 @@ const ContactForm = () => {
                 <Label className="label-text" htmlFor='feedback' md='4'>
                     Feedback
                 </Label>
-                <Col md='12'>
-                    <Field style={{backgroundColor: '#111115'}} className='form-control' name='feedback' placeholder='We appreciate your feedback' as='textarea' rows='4' />
+                <Col color='aqua' md='12'>
+                    <Field  style={{backgroundColor: '#111115'}} className='form-control' name='feedback' placeholder='We appreciate your feedback' as='textarea' rows='4' />
                     <ErrorMessage name='feedback'>
                         {(msg) => <p className="error-text">{msg}</p>}
                     </ErrorMessage>
