@@ -108,7 +108,6 @@ a {
     font-size: var(--fs--text);
     text-decoration: var(--text-dec-std);
     font-weight: var(--fw--normbr);
-
 }
 
 a:hover {
