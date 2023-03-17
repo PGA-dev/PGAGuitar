@@ -23,6 +23,7 @@ One of the most interesting questions I get asked as a guitar instructor is: "wh
 - Mostly Vanilla Javascript
 - gitlab for local git editing
 - GitHub repositories
+- Design Guide -- UX will center on the Neon Sign approach, a visual shock and awe
 
 ## Layout 
 - Home Page
