@@ -9,6 +9,9 @@
 ### **Images Repo:**
 #### https://github.com/PGA-dev/guitarImage
 
+
+### **JSON Server:**
+#### https://github.com/PGA-dev/guitarJSON
 ## Final Updates
 - site photos: https://github.com/PGA-dev/guitarImage
 - Added blur effect borders to the cards -- was very much inspired by Kevin Powell's version of the same effect
