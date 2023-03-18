@@ -71,8 +71,10 @@ h3 {
     font-weight: var(--fw--bright)
 }
 
+
 h3:hover{
-    color: var(--danger-clr);
+    color: var(--light-clr);
+    
 }
 
 h3::before {
@@ -84,12 +86,40 @@ h3::before {
     transform-origin: center;
     transition: transform 250ms ease-in-out;
     z-index: -1;
+
 }
 
 h3:hover::before {
     transform: scaleY(1);
-
+    animation: colorback 3500ms infinite;
 }
+
+@keyframes colorback {
+    0% {
+      background-color:  var(--clr-2);
+    }
+    10%{
+        background-color:  var(--clr-3);
+    }
+    25% {
+        background-color:  var(--clr-1); 
+    }
+    50% {
+        background-color:  var(--clr-5);
+    }
+    75%{
+        background-color:  var(--clr-1);
+    }
+    90% {
+        background-color:  var(--clr-3);
+    }
+    100% {
+        background-color:  var(--clr-2);
+    }
+  }
+
+
+
 
 /* Used for Card Headings */
 h4 {
