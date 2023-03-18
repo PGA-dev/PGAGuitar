@@ -16,6 +16,7 @@
 - site photos: https://github.com/PGA-dev/guitarImage
 - Added blur effect borders to the cards -- was very much inspired by Kevin Powell's version of the same effect
 - updated CSS to work cleanly with dark dropdowns and dark contact form; updated the font color to aqua on these too
+- These CSS updates were a cool way to learn more about animation and learn more about the @keyframes and @property CSS variable rules
 
 
 
