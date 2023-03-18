@@ -91,7 +91,7 @@ h3::before {
 
 h3:hover::before {
     transform: scaleY(1);
-    animation: colorback 3500ms infinite;
+    animation: colorback 7500ms infinite;
 }
 
 @keyframes colorback {
@@ -117,9 +117,6 @@ h3:hover::before {
         background-color:  var(--clr-2);
     }
   }
-
-
-
 
 /* Used for Card Headings */
 h4 {
