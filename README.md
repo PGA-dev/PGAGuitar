@@ -3,7 +3,23 @@
 ## A NuCamp React.JS Project
 ### by PGA
 
+### **Main GH:**
 #### https://github.com/PGA-dev/PGAGuitar
+
+### **Images Repo:**
+#### https://github.com/PGA-dev/guitarImage
+
+## Final Updates
+- site photos: https://github.com/PGA-dev/guitarImage
+- Added blur effect borders to the cards -- was very much inspired by Kevin Powell's version of the same effect
+- updated CSS to work cleanly with dark dropdowns and dark contact form; updated the font color to aqua on these too
+
+## To Do Still
+- Need to add my buyng guide tips
+- Must imbed YouTube, rather than use links
+- Must improve upon the sheer scope of material
+- Must add a real database to this, likely postgres, possibly Mongo, but not a fan 
+
 ## Portfolio Project Perspectives
 One of the most interesting questions I get asked as a guitar instructor is: "what paramaters are relevant to buying a guitar?" The answer, like most issues in life, varies with the needs of the student, or musician asking the question. While most beginner players don't really need a lot of information to get them started, potentially realizing that too much overkill on specifics might end up killing their "enjoyable" new hobby, they do often need solid technical data to inform them and educate them to make future musical decisions and purchases. Advanced, or pro-level players, often need a great deal more information on each instrument, and a way of comparing relevant brands and models for their particular musical needs. For these reasons I have decided to attempt a guide site to all guitar related buying. 
 
@@ -12,7 +28,7 @@ One of the most interesting questions I get asked as a guitar instructor is: "wh
 - diferences in product features
  - Links to buying guides
  - YouTube links to gear demo vids
- - eventually I will update a great deal of my own knowledge, when this goes live, for how to buy guitar gear, but for now I need to keep it simple.
+ - eventually I will update a great deal of my own knowledge, as a guitar teacher and musician, regarding how musicians can better buy guitar gear, but for now I need to keep it simple.
 
 ## Prospective technology
 - React
