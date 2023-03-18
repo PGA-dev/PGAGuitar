@@ -14,7 +14,7 @@
     --border-clr: #20678b;
     --border-2nd-clr: #3498c2;
 
-    /* Custom colors for gradient color-chase cards -- these might change on and off, so must be done separately*/
+    /* Custom colors for gradient color-chase cards -- these might change on and off, or more likely, the main colors in site might change, so must be done separately*/
     --clr-1: aqua;
     --clr-2: magenta;
     --clr-3: #a424ff;
@@ -198,13 +198,14 @@ p {
 
 
 /*card related*/
+/*@property rule lets the value be treated as an angle of the background, not as the rotational position of the card itself*/
 @property --gradient-angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
   }
-  
-  
+
+
   .card {
     background-color: var(--body-clr);
     border-radius: 0.9rem;
@@ -272,7 +273,7 @@ div>h6::before, div>h6::after{
       var(--clr-2),
       var(--clr-3),
       var(--clr-4),
-      var(--clr-5),
+      var(--clr-5),  
       var(--clr-6),
       var(--clr-5),
       var(--clr-4),
