@@ -483,6 +483,9 @@ div>h6::before, div>h6::after{
 
 
 /*carousel*/
+.carousel-control, .carousel-indicators {
+    color: var(--clr-1);
+}
 .carousel-control {
     color: var(--info-clr);
     background-color: var(--body-clr);

@@ -52,7 +52,7 @@ const SubHeader = ({ current, detail }) => {
     const bread1 = useBreadCrumb();
     //firstchild style
     const bread2 = useBreadCrumb();
-
+// will reclaim with .breadcrumb and .breadcrumb-item
     return (
         <Row style={headstyleNav} >
             <Col>
