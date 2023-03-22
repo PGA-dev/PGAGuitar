@@ -61,6 +61,19 @@ One of the most interesting questions I get asked as a guitar instructor is: "wh
 - Site Map
 - Currently Data is in JSON format, and being fetched from a JSON server -- eventually will be a Mongo List, or a PostGres DB
 
+## Node JS Endpoints
+- Site Ref **GET**
+- Site Map **GET**
+- Guitar ALL Guitar **GET**
+- Contact Feedback **POST**
+- Contact Feedback **GET**
+- Guitar Stat **GET**
+- Guitar Stat2 **GET**
+- Guitar Stat3 **GET**
+- Guitar Stat4 **GET**
+- Guitar Stat5 **GET**
+- Front Carousel **GET**
+- GuitarID **GET**
 ## To Do Still
 - Need to add my buyng guide tips
 - Must imbed YouTube, rather than use links
