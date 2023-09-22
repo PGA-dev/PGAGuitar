@@ -25,6 +25,12 @@ export const validateContactForm = (values) => {
         errors.email = 'Email required: xxxxxx@xxxx.xxx';
     }
 
+    //alt email for education
+    const regEd = /^(\w)+([.-]?\w)*(@)([\w]+)([.-]?\w+)*\.(ed){1}(u){0,1}$/;
+    if(!regEd.test(values.email)){
+        errors.email = 'Email required: xxxxxx@xxxx.ed(u)';
+    }
+
     //Feedback
     if (!values.feedback) {
         errors.feedback = 'Feedback Field Required';
