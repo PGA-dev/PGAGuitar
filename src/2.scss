@@ -1,54 +1,57 @@
-/*SCSS attempt
-TO DO: MUST GET CARD RADIAL WORK AND KEYFRAMES TO WORK
+/*SCSS conversion attempt
+TO DO: (variable conversion done), still need to apply
+MUST GET CARD RADIAL WORK AND KEYFRAMES TO WORK
 */
-:root {
-	--info-clr: aqua;
-	--secondary-clr: grey;
-	--danger-clr: magenta;
-	--success-clr: #49fb35;
-	--info-subtle: slateblue;
-	--danger-almost: #a424ff;
-	--body-clr: black;
-	--primary-clr: #09155a;
-	--light-clr: white;
-	--light-2nd: #d8f8f8;
-	--dark-clr: #111115;
-	--border-clr: #20678b;
-	--border-2nd-clr: #3498c2;
-	--clr-1: aqua;
-	--clr-2: magenta;
-	--clr-3: #a424ff;
-	--clr-4: #cffbff;
-	--clr-5: slateblue;
-	--clr-6: aqua;
-	--border-std: 5px solid #20678b;
-	--text-dec-std: none;
-	--text-dec-line: underline;
-	--font-main: papyrus;
-	--font-sec: arial-bold;
-	--fw-norm: 300;
-	--fw--normbr: 500;
-	--fw--bright: 700;
-	--fw--bright-wow: 900;
-	--fs--heading: 65px;
-	--fs--subhead: 45px;
-	--fs--pagehead: 40px;
-	--fs--text: 24px;
-	--fs-text-hover: 27px;
-	--fs-text-small: 16px;
-	--fs-link: 35px;
-	--fs-link-hover: 37px;
-}
+
+$info-clr: aqua;
+$secondary-clr: grey;
+$danger-clr: magenta;
+$success-clr: #49fb35;
+$info-subtle: slateblue;
+$danger-almost: #a424ff;
+$body-clr: black;
+$primary-clr: #09155a;
+$light-clr: white;
+$light-2nd: #d8f8f8;
+$dark-clr: #111115;
+$border-clr: #20678b;
+$border-2nd-clr: #3498c2;
+$clr-1: aqua;
+$clr-2: magenta;
+$clr-3: #a424ff;
+$clr-4: #cffbff;
+$clr-5: slateblue;
+$clr-6: aqua;
+$border-std: 5px solid #20678b;
+$text-dec-std: none;
+$text-dec-line: underline;
+$font-main: papyrus;
+$font-sec: arial-bold;
+$font-fam: arial;
+$fw-norm: 300;
+$fw--normbr: 500;
+$fw--bright: 700;
+$fw--bright-wow: 900;
+$fs--heading: 65px;
+$fs--subhead: 45px;
+$fs--pagehead: 40px;
+$fs--text: 24px;
+$fs-text-hover: 27px;
+$fs-text-small: 16px;
+$fs-link: 35px;
+$fs-link-hover: 37px;
+
+
 body {
-	font-family: var(--font-fam), Arial;
-	color: var(--info-clr);
+	font-family: var($font-fam), Arial;
+	color: var($info-clr);
 }
 h1 {
-	font-family: var(--font-main);
-	color: var(--info-clr);
+	font-family: var($font-main);
+	color: var($info-clr);
 }
 h2 {
-	color: var(--info-clr);
+	color: var($info-clr);
 	font-family: var(--font-main);
 }
 h3 {
@@ -61,7 +64,29 @@ h3 {
 		color: var(--light-2nd);
 		&::before {
 			transform: scaley(1);
-			animation: colorback 7500ms infinite;
+            @include keyframes (colorback){
+                0% {
+                    background-color:  var(--clr-2);
+                  }
+                  10%{
+                      background-color:  var(--clr-3);
+                  }
+                  25% {
+                      background-color:  var(--clr-1);
+                  }
+                  50% {
+                      background-color:  var(--clr-5);
+                  }
+                  75%{
+                      background-color:  var(--clr-1);
+                  }
+                  90% {
+                      background-color:  var(--clr-3);
+                  }
+                  100% {
+                      background-color:  var(--clr-2);
+                  }}
+			@include animation(colorback, 7500ms, infinite);
 		}
 	}
 	&::before {
@@ -75,36 +100,7 @@ h3 {
 		z-index: -1;
 	}
 }
-@keyframes {
-	colorback {
-		0% {
-      background-color: var(--clr-2);
-	}
-	rotation {
-		0% {
-      --gradient-angle: 0deg;
-	}
-}
-10% {
-	background-color: var(--clr-3);
-}
-25% {
-	background-color: var(--clr-1);
-}
-50% {
-	background-color: var(--clr-5);
-}
-75% {
-	background-color: var(--clr-1);
-}
-90% {
-	background-color: var(--clr-3);
-}
-100% {
-	background-color: var(--clr-2);
-	--gradient-angle: 360deg;
-}
-} {
+ 
 	h4 {
 		padding: 2px;
 		font-family: var(--font-main);
@@ -117,7 +113,7 @@ h3 {
 		font-family: papyrus;
 		font-size: var(--fs--pagehead);
 	}
-}
+
 h5 {
 	color: var(--danger-clr);
 	padding: 5px;
@@ -212,7 +208,7 @@ p {
       var(--clr-1)
     );
 	border-radius: inherit;
-	animation: rotation 4000ms linear infinite;
+	@include animation(rotation, 4000ms, linear, infinite) ;
 }
 div {
 	& > h6 {
