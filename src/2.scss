@@ -29,13 +29,13 @@ $font-main: papyrus;
 $font-sec: arial-bold;
 $font-fam: arial;
 $fw-norm: 300;
-$fw--normbr: 500;
-$fw--bright: 700;
-$fw--bright-wow: 900;
-$fs--heading: 65px;
-$fs--subhead: 45px;
-$fs--pagehead: 40px;
-$fs--text: 24px;
+$fw-normbr: 500;
+$fw-bright: 700;
+$fw-bright-wow: 900;
+$fs-heading: 65px;
+$fs-subhead: 45px;
+$fs-pagehead: 40px;
+$fs-text: 24px;
 $fs-text-hover: 27px;
 $fs-text-small: 16px;
 $fs-link: 35px;
@@ -57,40 +57,40 @@ h2 {
 h3 {
 	padding: 2px;
 	font-family: var($font-main);
-	font-size: var($fs--subhead);
+	font-size: var($fs-subhead);
 	color: var($info-clr);
-	font-weight: var($fw--bright);
+	font-weight: var($fw-bright);
 	&:hover {
 		color: var($light-2nd);
 		&::before {
 			transform: scaley(1);
             @include keyframes (colorback){
                 0% {
-                    background-color:  var(--clr-2);
+                    background-color:  var($clr-2);
                   }
                   10%{
-                      background-color:  var(--clr-3);
+                      background-color:  var($clr-3);
                   }
                   25% {
-                      background-color:  var(--clr-1);
+                      background-color:  var($clr-1);
                   }
                   50% {
-                      background-color:  var(--clr-5);
+                      background-color:  var($clr-5);
                   }
                   75%{
-                      background-color:  var(--clr-1);
+                      background-color:  var($clr-1);
                   }
                   90% {
-                      background-color:  var(--clr-3);
+                      background-color:  var($clr-3);
                   }
                   100% {
-                      background-color:  var(--clr-2);
+                      background-color:  var($clr-2);
                   }}
 			@include animation(colorback, 7500ms, infinite);
 		}
 	}
 	&::before {
-		background: var(--info-subtle);
+		background: var($info-subtle);
 		content: "";
 		inset: 0;
 		position: absolute;
@@ -103,15 +103,15 @@ h3 {
  
 	h4 {
 		padding: 2px;
-		font-family: var(--font-main);
-		font-size: var(--fs--pagehead);
-		color: var(--danger-almost);
-		font-weight: var(--fw--bright-wow);
-		text-decoration: var(--text-dec-line);
+		font-family: var($font-main);
+		font-size: var($fs-pagehead);
+		color: var($danger-almost);
+		font-weight: var($fw-bright-wow);
+		text-decoration: var($text-dec-line);
 	}
 	h6 {
 		font-family: papyrus;
-		font-size: var(--fs--pagehead);
+		font-size: var($fs-pagehead);
 	}
 
 h5 {
