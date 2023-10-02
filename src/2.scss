@@ -135,10 +135,10 @@ a {
 	}
 }
 p {
-	color: var(--info-subtle);
-	font-size: var(--fs--text);
-	text-decoration: var(--text-dec-std);
-	font-weight: var(--fw--bright);
+	color: var($info-subtle);
+	font-size: var($fs-text);
+	text-decoration: var($text-dec-std);
+	font-weight: var($fw-bright);
 	font-family: var(--font-main);
 }
 .btn:is(.btn, :visited, :link, :disabled) {
