@@ -172,13 +172,13 @@ p {
 		transition-delay: 0.2s;
 	}
 }
-@property {
-	$gradient-angle {
+
+@property --gradient-angle {
 		syntax: "<angle>";
 		initial-value: 0deg;
 		inherits: false;
 	}
-}
+
 .card {
 	background-color: var(--body-clr);
 	border-radius: 0.9rem;
