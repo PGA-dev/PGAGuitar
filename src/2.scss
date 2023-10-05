@@ -173,7 +173,7 @@ p {
 	}
 }
 @property {
-	--gradient-angle {
+	$gradient-angle {
 		syntax: "<angle>";
 		initial-value: 0deg;
 		inherits: false;
@@ -194,27 +194,27 @@ p {
 	inset: -0.7rem;
 	z-index: -1;
 	background: conic-gradient(
-      from var(--gradient-angle),
-      var(--clr-1),
-      var(--clr-2),
-      var(--clr-3),
-      var(--clr-4),
-      var(--clr-5),
-      var(--clr-6),
-      var(--clr-5),
-      var(--clr-4),
-      var(--clr-3),
-      var(--clr-2),
-      var(--clr-1)
+      from var($gradient-angle),
+      var($clr-1),
+      var($clr-2),
+      var($clr-3),
+      var($clr-4),
+      var($clr-5),
+      var($clr-6),
+      var($clr-5),
+      var($clr-4),
+      var($clr-3),
+      var($clr-2),
+      var($clr-1)
     );
 	border-radius: inherit;
 	@include animation(rotation, 4000ms, linear, infinite) ;
 }
 div {
 	& > h6 {
-		font-size: var(--fs--heading);
+		font-size: var($fs-heading);
 		color: aqua;
-		background-color: var(--body-clr);
+		background-color: var($body-clr);
 		border-radius: .5rem;
 		position: relative;
 		&::after {
@@ -229,27 +229,27 @@ div>h6::before, div>h6::after {
 	z-index: -1;
 	background: conic-gradient(
       from var(--gradient-angle),
-      var(--clr-1),
-      var(--clr-2),
-      var(--clr-3),
-      var(--clr-4),
-      var(--clr-5),  
-      var(--clr-6),
-      var(--clr-5),
-      var(--clr-4),
-      var(--clr-3),
-      var(--clr-2),
-      var(--clr-1)
+      var($clr-1),
+      var($clr-2),
+      var($clr-3),
+      var($clr-4),
+      var($clr-5),  
+      var($clr-6),
+      var($clr-5),
+      var($clr-4),
+      var($clr-3),
+      var($clr-2),
+      var($clr-1)
     );
 	border-radius: inherit;
 	animation: rotation 4000ms linear infinite;
 }
 .card-title {
-	color: var(--danger-almost);
-	font-weight: var(--fw--bright-wow);
-	font-size: var(--fs--subhead);
-	border: var(--border-clr) ridge 5px;
-	background-color: var(--body-clr);
+	color: var($danger-almost);
+	font-weight: var($fw-bright-wow);
+	font-size: var($fs-subhead);
+	border: var($border-clr) ridge 5px;
+	background-color: var($body-clr);
 }
 .card-body {
 	font-family: var(--font-main);
