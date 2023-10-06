@@ -172,7 +172,7 @@ p {
 		transition-delay: 0.2s;
 	}
 }
-
+/*@property is experimental...not sure of the compatibility of scss conversion*/
 @property --gradient-angle {
 		syntax: "<angle>";
 		initial-value: 0deg;
