@@ -194,7 +194,7 @@ p {
 	inset: -0.7rem;
 	z-index: -1;
 	background: conic-gradient(
-      from var($gradient-angle),
+      from var(--gradient-angle),
       var($clr-1),
       var($clr-2),
       var($clr-3),
